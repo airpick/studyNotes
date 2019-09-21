@@ -1,20 +1,21 @@
 # Welcome to the Void
-======
 
 ## Introduction
 The contents within are a compilation of study notes and exercises created by the user, primarily while working with courses in Udemy. 
 
 The focus is around Computer Science, with dips into the various roles one may undertake while in this field. 
 
+Below is a quick list of directories, as well as which courses were used to create the various files found within.
+
 ## Table of Contents
 1. Code
-  * Bash
-  * SQL
-  * AWS
-  * git
-  * Python
+    * Bash
+    * SQL
+    * AWS
+    * git
+    * Python
 2. Roles
-  * QA
+    * QA
 
 ## Code
 ### Bash
