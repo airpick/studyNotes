@@ -153,12 +153,12 @@ States a string as audio
 
 * `-name` will allow the user to request a specific file by name when using this command.
 * `-type` will allow the user to request all of a specific filetype (i.e. f (file), d (directory)).
-
+* `-maxdepth` restricts the depth of directories executed by `find`.
+  * ex: `find . -maxdepth 1 -name '*.ipa' -exec ./resign.sh {} \;`
 
 ## ^C
 * Cancels an active process. 
 * Useful for requests that are running for far too long, etc. 
-
 
 ## grep
 * Stands for "Global regular expression print"
@@ -600,3 +600,11 @@ These are most valuable in scripting since they will allow the user to evaluate 
 * This command will take a filename with its full path feed and return only the filename itself. 
 * ex: 
 	`basename /User/Shared/Study/readme.md` will return `readme.md`
+
+## uname
+* This will display information relating to the kernal you are running for your bash environment.
+
+### Options
+* `-a`: Displays *all* information.
+* `-v`: Displays *version*.
+* `-r`: Displays *kernal release*. 

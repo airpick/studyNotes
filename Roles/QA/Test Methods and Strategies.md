@@ -6,13 +6,16 @@
 2. Reporting Methods
   * Test Cases
   * Test Matrices
-3. Test Methods
+3. QA Team Test Methods
   * Full
   * Smoke
   * Sanity
   * Regression
   * Risk-based
   * Negative
+4. Test Approaches per Product
+  * Mobile Test Strategy
+  * Web Application Test Strategy
 
 ## Overview
 The purpose of this page is to help inform new and experienced QA members on the different types of test methods and strategies which can be leveraged for a project. 
@@ -50,7 +53,7 @@ Best used in after-deployment scenarios, and should never be the sole method of 
 1. Export the page as a .pdf file. 
 2. Copy the tables into an .xlsx spreadsheet. 
 
-## Test Methods
+## QA Team Test Methods
 ### Full
 * All features are tested to their fullest extent or limit. 
 * This should only be performed using a full test suite / test cases.
@@ -80,3 +83,38 @@ Best used in after-deployment scenarios, and should never be the sole method of 
 ### Negative
 * Evaluates that the product behaves as expected when performing tests outside of intended use.
 * Error handling is considered a part of Negative testing, as Negative encompasses all non-Happy Path flows.
+
+## Test Approaches per Product
+### Mobile Test Strategy
+Mobile applications can be widely complex and testing should be created by each level of engineering to ensure a quality product.
+The following outlines which test strategies should be employed, ownership of each method, and a brief summary of the methodology.
+
+#### Unit Testing - SDE Team
+Unit Testing is intended to confirm the logic of each individual unit within a product is working correctly.
+This should always be performed using the same coding language leveraged to build the product.
+
+The tests themselves will always be automated, and developers should have these built directly into the build pipeline. 
+This will allow the tests to execute with each build and quickly catch potential regressions introduced during the development cycle. 
+
+#### Integration Testing - SDE Team or SDET Team
+All non-trivial applications will require integration with other products, such as databases, filesystems, and network calls to other applications.
+When approaching Unit Testing, Integration is usually separated to allow Unit Tests to execute quickly.
+
+Although considered separate from Unit Testing, these tests should also be performed with a similar frequency and also must be automated. 
+This level of testing is crucial, as many portions of an application can depend on integration to allow its full functionality.
+
+Depending on ownership of the component used for integration, this level of testing may be performed outside of the organization.
+
+#### Automated UI Testing - SDET Team
+UI tests are the most fragile of the Mobile Test Strategies, as their success depends on variables such as stable layouts, sizing, device status, and network speeds. 
+Due to volatility, many SDET teams approach the use of these tests only for regression on released and stable features.
+
+A UI Test Suite should be able to confirm functional interactions and UI presentation for each page available within the mobile application.
+
+This is still very valuable, as it frees QA time to tackle validation of new, more volatile features which typically require greater review.
+
+#### Manual Mobile Testing - QA Team
+This approach encompasses end-user testing performed by the QA team.
+Because of time consumption, all testing above should be performed prior to this activity.
+
+Testing with this approach should leverage different factors, such as a variety of devices and OS', to ensure the best possible end-user experience.

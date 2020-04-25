@@ -19,18 +19,18 @@ Understanding this is crucial for cherrypicking branches.
 
 # Commands
 
-## git commit
+## `git commit`
 Applies a copy of your current checked-out repository to the branch that is current. 
 To keep lightweight, branches and new commits simply include diffs from past commits.
 
-### -m "{yourMessage}"
+### `-m "{yourMessage}"`
 This will add a message alongside the commit. 
 It is an invaluable part of working with a team and ensuring the code is readable by others in the future.
 
-## git checkout {branchName}
+## `git checkout {branchName}`
 Grabs the latest version of the named branch.
 
-### -b
+### `-b`
 This creates a new branch and immediately checks it out. 
 i.e. `git checkout -b {branchName}`
 
@@ -49,42 +49,48 @@ This will assign head upward a number of parent commits equivalent to the `num` 
 i.e. `git checkout bugFix~5` will move the HEAD to a commit 5 parents above the current in the designated branch, `bugFix`.
 This operator can also be used with relative references, such as HEAD itself.
 
-## git merge {branchName}
+## `git merge {branchName}`
 Merges the designated branch into the CCB.
 
 Example:
 If the user is currently in `master` and there is another branch called `bug-SHK-895`, the following will merge `bug-SHK-895` into master:
 `git merge bug-SHK-895`
 
-## git rebase {branchName}
+## `git rebase {branchName}`
 Merges the CCB into the designated branch and commits it as the latest version. 
 The designated branch is then re-named as the CCB.
 
-## git log
+## `git log`
 This command displays a list of the previous commits applied to the CCB.
 
-## git branch
+## `git branch`
 The `branch` command can be used to move a branch's location to another commit/branch.
 
-### -f
+### `-f`
 This option will _force_ a branch to a commit/branch. 
 i.e. `git branch -f master bugFix~3`
 Doing the above will move the `master` branch into the `bugFix` branch's parent, 3 commits up. 
 
-## git reset
+## `git reset`
 This will move a branch backward to a designated point _as though the original commits that are being reset never occurred_. 
 i.e. `git reset HEAD~2` will undo the past two commits.
 
 reset will only work with local branches (due to its rewriting history properties).
 
-## git revert
+## `git revert`
 In order to do something similar to `git reset` using a publicly shared repo, you will need to use `git revert`. 
 This will undo the most recent commit and apply it to the CCB.
 
 i.e. `git revert master` will revert the master branch back one commit, but only if it is where HEAD is. 
 
-## git add
+## `git add`
 This should be ran before `git commit` so that the changes in the current remote directory are applied.
+
+## `git status`
+This allows a high-level overview of all files impacted by any changes which have been staged using `git add`.
+
+## `git diff --staged`
+After the user has staged changes from their local checkout using `git add`, you may review the exact differences of these changes using the above command.
 
 ----
 

@@ -54,6 +54,7 @@ What is chosen depends on which features best suit the author and code being wri
 | Tuples | tup | Ordered immutable sequence of objects: (10,"hello",200.3) |
 | Sets | set | Unordered collection of unique objects: {"a","b"} |
 | Booleans | bool | Logical value indicating `True` or `False` | 
+| None | None | A None value is nothing; excellent as a placeholder |
 
 ## Arithmetic Operators
 | Operator | Function |
@@ -201,3 +202,33 @@ name = "Michael"
 print(f'Hello {name}!')
 ```
 This will return `'Hello Michael!'`. 
+
+## Lists
+* Lists are ordered sequences that can hold a variety of object types.
+* They use [] brackets and commas to separate objects in the list.
+  * `[1,2,3,4,5]`
+* Lists support indexing and slicing.
+* Lists can also be nested and have a variety of useful methods which can be called off of them. 
+* Lists can also concatenate.
+
+### Changing Values
+To change a value in a list, simply refer to the value's index.
+ex: `my_list[0] = "new value"`
+
+### .append()
+Use the `.append()` function to add a new value to an existing list.
+ex: `my_list.append("seven")` will add a new string value to the end of `my_list` of `"seven"`. 
+
+### .pop()
+Will remove an item from a list.
+Default is the last item in the list.
+
+When using this function, it will output the removed item as its result while removing it. 
+As such, you can assign items removed with this method to a variable or different list.
+
+### .sort()
+Sorts a list (alphabetically if strings, numerically if floats/ints).
+This outputs nothing and applies directly to the list it is called for. 
+
+### .reverse()
+Opposite of `.sort()`.

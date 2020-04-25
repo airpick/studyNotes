@@ -84,8 +84,8 @@ ORDER BY column_a;`
 * VENN diagrams of JOIN features: https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
 
 ----
-# SQL Notes
-## Statements / Clauses / Keywords (synonymous in the course lecture)
+# Query Notes
+## Fundamental Statements / Clauses / Keywords (synonymous in the course lecture)
 ### `SELECT`
 ex: `SELECT column1,column2,... FROM table_name`
 #### Purpose
@@ -127,7 +127,7 @@ ex: `SELECT email FROM customer WHERE first_name = 'Michael' AND first_name = 'O
 | AND | logical operator AND |
 | OR | logical operator OR |
 
-### COUNT
+### `COUNT`
 #### Wildcard
 ex: `SELECT COUNT (*) FROM film;`
 * The COUNT function returns the number of input rows that match a specific condition on a query.
@@ -281,8 +281,184 @@ ex: `SELECT column_1,column_2 FROM table_1 UNION SELECT column_1,column_2 FROM t
 * Both `SELECT` queries must return the same number of columns.
 * Corresponding columns in the queries must have compatible data types.
 	* i.e. In the example above, if the `column_1` for `table_1` is an integer, the `column_1` for `table_2` must also be an integer.
-* The `UNION` operator removes all duplicate rows unlesss `UNION ALL` is used.
+* The `UNION` operator removes all duplicate rows unless `UNION ALL` is used.
 * The `UNION` operator may place the rows in the first query before, after, or between the rows in the result set of the second query.
-* To sort the rows in the combined result set by a specified column, use the `ORDER BY` clause.
+* To sort the rows in the combined result set by a specified column, use the `ORDER BY` clause. This is the main benefit of the `UNION` operator.
 * We often use the `UNION` operator to combine data from similar tables that are not perfectly normalized.
 * Those tables are often found in the reporting or data warehouse system.
+
+----
+## Advanced SQL Commands
+### `SHOW`
+* Shows the value of a run-time parameter.
+* Using `SHOW ALL` will show the current setting of run-time parameters used by PostgreSQL.
+* `SHOW TIMEZONE` will show the timezone used by the machine currently hosting the database.
+
+### Timestamps
+ex: `SELECT SUM(amount) AS total, extract(month from payment_date) AS month FROM payment GROUP BY month ORDER BY total DESC;`
+ex: `SELECT NOW()` will display the current timestamp at query execution
+ex: `SELECT TIMEOFDAY()` will display current timestamp with DDD MMM YY proceeding
+ex: `SELECT CURRENT_TIME` provides current time only w/ timezone
+ex: `SELECT CURRENT_DATE` will display the current date only in YYYY-MM-DD
+* [PostgreSQL Documentation](https://www.postgresql.org/docs/12/functions-datetime.html)
+* Different SQL engines (MySQL, Oracle, etc.) may use different syntax. Please double-check their online references, respectively, for more information.
+* You can also `+` or `-` many functions, allowing quick editing from the query directly. 
+    * This is useful for items such as adjusting a timestamp to reflect timezone (from UTC). 
+* To prevent confusion, the `from` statement used for extract will be lower case (to imply it is pulling from a column, not a table).
+
+### `EXTRACT()`
+ex: `EXTRACT(YEAR FROM date_col)`
+* Allows the user to extract/obtain a sub-command of a date value.
+
+#### Table of Extract Functions for PostgreSQL
+| unit | explanation |
+|:--------:|:-----------:|
+| age | Calculates and returns the given age of a timestamp |
+| day | Day of the month (1 to 31) |
+| dow | Day of the week (0=Sunday, 1=Monday, etc.) |
+| doy | Day of the year (1=first day of year , 365/366=last day, depending on if leap year) |
+| epoch | Number of seconds since `1970-01-01 00:00:00 UTC`, if date value. 
+Number of seconds in an interval value, if interval value. |
+| hour | Hour (o to 23) |
+| microseconds | Seconds (and fractional seconds) multiplied by 1,000,000 |
+| millennium | Millennium value |
+| milliseconds | Seconds (and fractional seconds) multiplied by 1,000 |
+| minute | Minute (0 to 59) |
+| month | Number for the month (1 to 12), if date value.
+Number of months (0 to 11), if interval value. |
+| quarter | Quarter (1 to 4) |
+| second | Seconds (and fractional seconds) |
+| week | Number of the week of the year based on ISO 8601 (where the year begins on the Monday of the week that contains January 4th) |
+| year | Year as 4-digits |
+
+### `TO_CHAR()`
+ex: `TO_CHAR(date_col, 'yyyy-mm-dd')`
+* [PostgreSQL Documentation](https://www.postgresql.org/docs/9.1/functions-formatting.html)
+* General function to convert data types into text.
+* Useful for timestamp formatting.
+
+### Mathmatical Functions
+ex: `SELECT ROUND(rental_rate/replacement_cost,2)*100 AS percent_cost FROM film;`
+* [PostgreSQL Documentation](https://www.postgresql.org/docs/12/functions-math.html)
+* Most mathmatical functions, including trigonometric functions, can be performed within a SQL query, if needed.
+
+### String Functions
+ex: `SELECT first_name || ' ' || last_name AS full_name FROM customer;`
+ex: `SELECT upper(first_name),char_length(first_name) FROM customer;`
+ex: `SELECT LEFT(first_name,1) || last_name || '@domain.com' FROM customer;` would create an email address, such as `mpay@domain.com`, for each customer
+* [PostgreSQL Documentation](https://www.postgresql.org/docs/12/functions-string.html)
+* When using Regular Expressions (regex), it is recommended to use the `LIKE` function to assist.
+
+### Subquery
+ex: `SELECT film_id,title,rental_rate FROM film WHERE rental_rate > (SELECT AVG(rental_rate) FROM film);`
+
+* A subquery is when the results of one query is used in execution of another query. 
+* To perform a subquery, the initial query will have a second `SELECT` statement contained within paranthesis.
+* The subquery must yield a result which will be sensible to the main query.
+    * Examples of a typical response from a subquery are single boolean or integer responses - these are used easily with comparison operators.
+* To construct a subquery, we put the second query in brackets, `()`, and use it in the `WHERE` clause as an expression (see `ex: ` above).
+* The SQL engine will execute Subqueries before executing the query not contained within brackets `()`.
+* A subquery can operate on a separate table.
+
+ex: 
+`SELECT title,film_id
+FROM film
+WHERE film_id IN 
+	(SELECT inventory.film_id 
+	FROM rental
+	INNER JOIN inventory ON inventory.inventory_id = rental.inventory_id
+	WHERE rental.return_date BETWEEN '2005-05-29' AND '2005-05-30')
+ORDER BY title ASC;`
+
+* Use Case: Suppose we want to find the films whose rental rate is higher than the average rental rate.
+* Approach:
+    * Find the average retnal rate by using the SELECT statement and average function (AVG).
+    * Use the result of the first query in the second SELECT statement to find the films that we want.
+
+### Self Join
+ex: 
+`SELECT c1.first_name,c1.last_name,c2.first_name AS match_name
+FROM customer AS c1, customer AS c2
+WHERE c1.last_name = c2.first_name
+ORDER BY first_name ASC;`
+ex: 
+`SELECT a.customer_id,a.first_name,a.last_name,b.customer_id,b.first_name,b.last_name
+FROM customer AS a
+JOIN customer AS b
+ON a.first_name = b.last_name;`
+
+* You use self join when you want to combine rows with other rows in the same table.
+* To perform the self join operation, you must use a table alias to help SQL distinguish the left table from the right table of the same table.
+* You may also use a `LEFT JOIN` (or `RIGHT`, if needed) to provide all records from one of the tables, regardless of whether a match occurred.
+* For additional reference on this technique, perform a google search for `manager employee self join`. This is a common interview question and an excellent example of this technique's Use Case.
+
+----
+# Creating/Manipulating Tables and Databases
+## Data Types
+* Boolean
+* Character
+* Number
+* Temporal
+* Special Types
+* Array
+
+### Boolean
+* A Boolean data type can hold one of two possible values: `true` or `false`.
+* In situations where the value is unknown, the `null` value is used.
+* You can use `boolean` or `bool` keywords when you declare a column that has Boolean data.
+* When you insert data into a Boolean column, PostgreSQL will convert it into the Boolean value.
+  * ex: 1, yes, y, t, true are converted to `true` and 0, no, n, false, f are converted to `false`
+* When you select data from a Boolean column, PostgreSQL displays `t` for `true`, `f` for `false`, and a space character (` `) for `null`.
+
+### Character
+PostgreSQL has 3 different character types.
+#### `char`
+A single character.
+#### `char(n)`
+Fixed-length character strings.
+* If you insert a string that is shroter than the length of the column, PostgreSQL will pad space. 
+* If you insert a string that is longer than the length of the column, PostgreSQL will issue an error.
+
+#### `varchar(n)`
+Variable-length character strings.
+* You can store up to `n` characters with variable-length character strings. 
+* PostgreSQL does not pad spaces when the string is shorter than the legnth of the column.
+
+### Integers
+#### `smallint`
+Small integer is a 2-byte signed integer that has a range of (-32768,32767).
+#### `int`
+Integer is a 4-byte integer that has a range of (-214783648,214783647).
+#### `serial`
+Serial is the same as integer, except that PostgreSQL will populate values into the column automatically (think: numbering your rows).
+This is similar to the `AUTO_INCREMENT` attribute used in other database management systems.
+#### `float(n)`
+This is a floating-point number with precision for `n` up to a maximum of 8 bytes.
+#### `real` or `float8`
+This is a double-precision (8-byte) floating-point number.
+#### `numeric` or `numeric(p,s)`
+A real number, `p`, which has `s` number  of digits _after_ the decimal point.
+If you use `(p,)`, the full number with all possible decimal points will be stored.
+
+### Temporal
+Temporal data types store date and time related data.
+#### `date`
+Stores the date.
+#### `time`
+Stores the time.
+#### `timestamp`
+Stores date and time.
+#### `interval`
+Stores the difference in timestamps.
+#### `timestamptz`
+Stores both timestamp and timezone data.
+
+### Keys
+#### Primary
+* Is a column or a group of columns which is/are used to identify a row uniquely within a table.
+* Primary keys are defined through primary key constraints.
+* A table can have one and only one primary key.
+* It is good practice to add a primary key to every table. 
+* When you add a primary key to a table, PostgreSQL creates a unique index on the column or a group of columns used to define the primary key.
+
+#### Foreign
