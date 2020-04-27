@@ -53,13 +53,15 @@ In order for the image to display, the `src` attribute must be used.
 * `alt`: used for the alternative text displayed when a user hovers their mouse over the image
 
 #### Anchor `<a>` `</a>`
-Lays anchor on a page which other things can be attached to, such as hyperlinks.
+Lays anchor on a page which other things can be attached to, such as hyperlinks or internal references within the current page. 
 
 ##### Attributes
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | download | filename | Causes a download of the specified filename to occur if the user selects the anchor. |
-| href | URL | Redirects the user to the URL selected. |
+| href | URL
+`#id` | Redirects the user to the URL selected.
+Navigates the user to the the attribute which has the correlating `id` used within the current page. |
 | hreflang | language_code | Specifies the language used for the linked document. |
 | media | media_query | Specifies what media/device the linked document is optimized for. |
 | ping | list_of_URLs | Specifies a space-separated list of URLs to which, when the link is followed, post requests with the body ping will be sent by the browser (in the background). Typically used for tracking. |
@@ -80,10 +82,26 @@ noreferrer
 noopener
 prev
 search
-tag | Specifies the relationship between the current document and the linked document. |
+tag | Provides a link to an alternate representation of the document (i.e. print page, translated or mirror).
+Provides a link to the author of the document.
+Permanent URL used for bookmarking.
+Indicates that the referenced document is not part of the same site as the current document.
+Provides a link to a help document.
+Provides a link to licensing information for the document.
+Provides a link to the next document in the series.
+Links to an unendorsed document, like a paid link ("nofollow" is used by Google, to specify that the Google search spider should not follow that link).
+Requires that the browser should not send an HTTP referer header if the user follows the hyperlink.
+Requires that any browsing context created by following the hyperlink must not have an opener browsing context.
+The previous document in a selection.
+Links to a search tool for the document.
+A tag (keyword) for the current document. |
 | target | _blank
 _parent
 _self
 _top
-framename | Specifies where to open the linked document. |
+framename | Opens the document in a new window or tab.
+Opens the document in the same frame it was selected in (default).
+Opens the document in the parent frame.
+Opens the document in the full body of the window.
+Opens the document in a named frame. |
 | type | media_type | Specifies the media type of the linked document. |
