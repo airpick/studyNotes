@@ -160,3 +160,39 @@ As its name implies, it will present interactable buttons on a page.
 | name | name | Specifies a name for the button. |
 | type | • button <br>• reset <br>• submit | Specifies the type of button. |
 | value | text | Specifies an initial value for the button. |
+
+#### Label `<label>` `</label>`
+The `<label>` tag defines a label for several elements:
+
+* `<input type="color">`
+* `<input type="date">`
+* `<input type="datetime-local">`
+* `<input type="email">`
+* `<input type="file">`
+* `<input type="month">`
+* `<input type="number">`
+* `<input type="password">`
+* `<input type="radio">`
+* `<input type="range">`
+* `<input type="search">`
+* `<input type="tel">`
+* `<input type="text">`
+* `<input type="time">`
+* `<input type="url">`
+* `<meter>`
+* `<progress>`
+* `<select>`
+* `<textarea>`
+
+Proper use of labels with the elements above will benefit:
+
+* Screen reader users (will read out the label when the user is focused on the element)
+* Users who have difficulty clicking on very small regions (such as checkboxes) - because when a user clicks the text within the `<label>` element, it toggles the input (this increases the hit area). 
+
+The `for` attribute of the `<label>` tag should be equal to the `id` attribute of the related element to bind them together. 
+
+##### Attributes
+| Attribute | Value | Description |
+| ---- | ---- | ---- |
+| for | element_id | Specifies which form element a label is bound to. |
+| form | form_id | Specifies which form the label belongs to. |
