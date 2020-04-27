@@ -20,7 +20,7 @@ The user may exit the Edit mode at any time by pressing Esc.
 Press `i` while on the GUI view page to insert new lines of text. 
 Typing for this is very intuitive and similar to use for most text programs. 
 
-### `assert`?
+### `assert`
 This is really just a different version of insert, but it inputs text *after* where the cursor is located.
 Press `a` to enter into this type of Edit mode. 
 
