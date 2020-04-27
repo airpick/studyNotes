@@ -88,7 +88,7 @@ ex: `:syntax on` for one line will ensure you always have syntax turned on and r
 ## Quick Navigation
 * `0` - Moves cursor to beginning of line
 * `$` - Moves cursor to end of line
-* `w' - Moves forward one word (next alphanumeric word)
+* `w` - Moves forward one word (next alphanumeric word)
 * `W` - Moves forward one word (delimited by whitespace)
 * `b` - Moves backward one word (previous alphanumeric word)
 * `B` - Moves backward one word (delimited by whitespace)
