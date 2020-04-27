@@ -116,3 +116,29 @@ Will allow the viewer to perform submit some type of input/interaction with the 
 | type | • button <br>• checkbox <br>• color <br>• date <br>• datetime-local <br>• email <br>• file <br>• hidden <br>• image <br>• month <br>• number <br>• password <br>• radio <br>• range <br>• reset <br>• search <br>•  <br>• submit <br>• tel <br>• text <br>•  <br>• time <br>• url <br>• week | Specifies the type <input> element to display. |
 | value | text | Specifies the value of an <input> element. |
 | width | pixels | Specifies the width of an <input> element (only for type="image"). |
+
+#### Form `<form>` `</form>`
+Creates an HTML form for user input.
+Can contain one or more of the following form-type elements:
+
+* `<input>`
+* `<textarea>`
+* `<button>`
+* `<select>`
+* `<option>`
+* `<optgroup>`
+* `<fieldset>`
+* `<label>`
+* `<output>`
+
+##### Attributes
+| Attribute | Value | Description |
+| ---- | ---- | ---- |
+| accept-charset | character_set | Specifies the character encodings that are to be used for the form submission. |
+| action | URL | Specifies where to send the form-data when a form is submitted. |
+| autocomplete | • on <br>• off | Specifies whether a form should have autocomplete on or off. |
+| enctype | • application/x-www-form-urlencoded <br>• multipart/form-data <br>• text/plain | Specifies how the form-data should be encoded when submitting it to the server (only for method="post"). |
+| method | • get <br>• post | Specifies the HTTP method to use when sending form-data. |
+| name | text | Specifies the name of a form. |
+| novalidate | novalidate | Specifies that the form should not be validated when submitted. |
+| target | • `_blank` <br>• `_self` <br>• `_parent` <br>• `_top` | Specifies where to display the response that is received after submitting the form. |
