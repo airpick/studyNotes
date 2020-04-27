@@ -59,49 +59,11 @@ Lays anchor on a page which other things can be attached to, such as hyperlinks 
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | download | filename | Causes a download of the specified filename to occur if the user selects the anchor. |
-| href | URL
-`#id` | Redirects the user to the URL selected.
-Navigates the user to the the attribute which has the correlating `id` used within the current page. |
+| href | (1) URL (2) `#id` | (1) Redirects the user to the URL selected. (2) Navigates the user to the the attribute which has the correlating `id` used within the current page. |
 | hreflang | language_code | Specifies the language used for the linked document. |
 | media | media_query | Specifies what media/device the linked document is optimized for. |
 | ping | list_of_URLs | Specifies a space-separated list of URLs to which, when the link is followed, post requests with the body ping will be sent by the browser (in the background). Typically used for tracking. |
-| referrerpolicy | no-referrer
-no-referrer-when-downgrade
-origin
-origin-when-cross-origin
-unsafe-url | Specifies which referrer to send. |
-| rel | alternate
-author
-bookmark
-external
-help
-license
-next
-nofollow
-noreferrer
-noopener
-prev
-search
-tag | Provides a link to an alternate representation of the document (i.e. print page, translated or mirror).
-Provides a link to the author of the document.
-Permanent URL used for bookmarking.
-Indicates that the referenced document is not part of the same site as the current document.
-Provides a link to a help document.
-Provides a link to licensing information for the document.
-Provides a link to the next document in the series.
-Links to an unendorsed document, like a paid link ("nofollow" is used by Google, to specify that the Google search spider should not follow that link).
-Requires that the browser should not send an HTTP referer header if the user follows the hyperlink.
-Requires that any browsing context created by following the hyperlink must not have an opener browsing context.
-The previous document in a selection.
-Links to a search tool for the document.
-A tag (keyword) for the current document. |
-| target | _blank
-_parent
-_self
-_top
-framename | Opens the document in a new window or tab.
-Opens the document in the same frame it was selected in (default).
-Opens the document in the parent frame.
-Opens the document in the full body of the window.
-Opens the document in a named frame. |
+| referrerpolicy | (1) no-referrer (2) no-referrer-when-downgrade (3) origin (4) origin-when-cross-origin (5) unsafe-url | Specifies which referrer to send. |
+| rel | (1)alternate (2) author (3) bookmark (4) external (5) help (6) license (7) next (8) nofollow (9) noreferrer (10) noopener (11) prev (12) search (13) tag | (1) Provides a link to an alternate representation of the document (i.e. print page, translated or mirror). (2) Provides a link to the author of the document. (3) Permanent URL used for bookmarking. (4) Indicates that the referenced document is not part of the same site as the current document. (5) Provides a link to a help document. (6) Provides a link to licensing information for the document. (7) Provides a link to the next document in the series. (8) Links to an unendorsed document, like a paid link ("nofollow" is used by Google, to specify that the Google search spider should not follow that link). (9) Requires that the browser should not send an HTTP referer header if the user follows the hyperlink. (10) Requires that any browsing context created by following the hyperlink must not have an opener browsing context. (11) The previous document in a selection. (12) Links to a search tool for the document. (13) A tag (keyword) for the current document. |
+| target | (1) `_blank` (2) `_parent` (3) `_self` (4) `_top` (5) `framename` | (1) Opens the document in a new window or tab. (2) Opens the document in the same frame it was selected in (default). (3) Opens the document in the parent frame. (4) Opens the document in the full body of the window. (5) Opens the document in a named frame. |
 | type | media_type | Specifies the media type of the linked document. |
