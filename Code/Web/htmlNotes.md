@@ -2,21 +2,35 @@
 ## Table of Contents
 xxx
 
-## Overview
+## 1 Overview
 A quick and dirty reference page for all things HTML5. 
 Study is being performed concurrently on [Free Code Camp](https://www.freecodecamp.org/).
 
-## Elements
+## 2 Elements
 Any object in an html document is an element. 
 Elements require one to two tags (depending on whether they are self-closing or require a closing tag) in order to function correctly.
 
 ex: `<p>This is a paragraph section.</p>`
 
-### Elements
-#### Comment `<!--` `-->`
+### 2.1 Basic Elements
+#### 2.1.1 Comment `<!--` `-->`
 Maybe the most important element, this allows the user to leave a comment.
 
-#### Headers `<h#>` `</h#>`
+#### 2.1.2 Header `<header>` `</header>`
+Used as a container for introductory content or a set of navigation links.
+
+#### 2.1.3 Main `<main>` `</main>`
+Used as a container for the main content of a webpage.
+
+#### 2.1.4 Footer `<footer>` `</footer>`
+User as a container which typically contains:
+
+* authorship info
+* copyright info
+* contact info
+* sitemap
+
+#### 2.1.5 Headers `<h#>` `</h#>`
 These help to separate sections and sub-sections on a website. 
 They also often link up to help provide an easy to read hierarchical display for pages with a large volume of content.
 
@@ -27,35 +41,21 @@ They also often link up to help provide an easy to read hierarchical display for
 * `<h5></h5>`
 * `<h6></h6>`
 
-#### Paragraph `<p>` `</p>`
+#### 2.1.6 Paragraph `<p>` `</p>`
 As it's name implies.
 
-#### Header `<header>` `</header>`
-Used as a container for introductory content or a set of navigation links.
-
-#### Main `<main>` `</main>`
-Used as a container for the main content of a webpage.
-
-#### Footer `<footer>` `</footer>`
-User as a container which typically contains:
-
-* authorship info
-* copyright info
-* contact info
-* sitemap
-
-#### Image `<img>`
+#### 2.1.7 Image `<img>`
 Used for each image on a webpage.
 In order for the image to display, the `src` attribute must be used.
 
-##### Attributes
+##### 2.1.7.1 Attributes
 * `src`: used for the image's link
 * `alt`: used for the alternative text displayed when a user hovers their mouse over the image
 
-#### Anchor `<a>` `</a>`
+#### 2.1.8 Anchor `<a>` `</a>`
 Lays anchor on a page which other things can be attached to, such as hyperlinks or internal references within the current page. 
 
-##### Attributes
+##### 2.1.8.1 Attributes
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | download | filename | Causes a download of the specified filename to occur if the user selects the anchor. |
@@ -68,21 +68,48 @@ Lays anchor on a page which other things can be attached to, such as hyperlinks 
 | target | • `_blank` <br>• `_parent` <br>• `_self` <br>• `_top` <br>• `framename` | • Opens the document in a new window or tab. <br>• Opens the document in the same frame it was selected in (default). <br>• Opens the document in the parent frame. <br>• Opens the document in the full body of the window. <br>• Opens the document in a named frame. |
 | type | media_type | Specifies the media type of the linked document. |
 
-#### Lists
+#### 2.1.9 Lists
 Each item within any list must be included within a `<li>` `</li>` element. 
 Each of these will represent one number or bullet point.
 These must be contained within either an Ordered or Unordered element.
 
-##### Unordered `<ul>` `</ul>`
+##### 2.1.9.1 Unordered `<ul>` `</ul>`
 Displays the list in bullet points.
 
-##### Ordered `<ol>` `</ol>`
+##### 2.1.9.2 Ordered `<ol>` `</ol>`
 Displays the list with numbers.
 
-#### Input `<input>`
+### 2.2 Forms and Interactive Elements
+#### 2.2.1 Form `<form>` `</form>`
+Creates an HTML form for user input.
+Can contain one or more of the following form-type elements:
+
+* `<input>`
+* `<textarea>`
+* `<button>`
+* `<select>`
+* `<option>`
+* `<optgroup>`
+* `<fieldset>`
+* `<label>`
+* `<output>`
+
+##### 2.2.1.1 Attributes
+| Attribute | Value | Description |
+| ---- | ---- | ---- |
+| accept-charset | character_set | Specifies the character encodings that are to be used for the form submission. |
+| action | URL | Specifies where to send the form-data when a form is submitted. |
+| autocomplete | • on <br>• off | Specifies whether a form should have autocomplete on or off. |
+| enctype | • application/x-www-form-urlencoded <br>• multipart/form-data <br>• text/plain | Specifies how the form-data should be encoded when submitting it to the server (only for method="post"). |
+| method | • get <br>• post | Specifies the HTTP method to use when sending form-data. |
+| name | text | Specifies the name of a form. |
+| novalidate | novalidate | Specifies that the form should not be validated when submitted. |
+| target | • `_blank` <br>• `_self` <br>• `_parent` <br>• `_top` | Specifies where to display the response that is received after submitting the form. |
+
+#### 2.2.3 Input `<input>`
 Will allow the viewer to perform submit some type of input/interaction with the site.
 
-##### Attributes
+##### 2.2.3.1 Attributes
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | accept | • file_extension <br>• audio/* <br>• video/* <br>• image/* <br>• media_type | Specifies a filter for what file types the user can pick from the file input dialog box (only for type="file"). |
@@ -117,36 +144,10 @@ Will allow the viewer to perform submit some type of input/interaction with the 
 | value | text | Specifies the value of an `<input>` element. |
 | width | pixels | Specifies the width of an `<input>` element (only for type="image"). |
 
-#### Form `<form>` `</form>`
-Creates an HTML form for user input.
-Can contain one or more of the following form-type elements:
-
-* `<input>`
-* `<textarea>`
-* `<button>`
-* `<select>`
-* `<option>`
-* `<optgroup>`
-* `<fieldset>`
-* `<label>`
-* `<output>`
-
-##### Attributes
-| Attribute | Value | Description |
-| ---- | ---- | ---- |
-| accept-charset | character_set | Specifies the character encodings that are to be used for the form submission. |
-| action | URL | Specifies where to send the form-data when a form is submitted. |
-| autocomplete | • on <br>• off | Specifies whether a form should have autocomplete on or off. |
-| enctype | • application/x-www-form-urlencoded <br>• multipart/form-data <br>• text/plain | Specifies how the form-data should be encoded when submitting it to the server (only for method="post"). |
-| method | • get <br>• post | Specifies the HTTP method to use when sending form-data. |
-| name | text | Specifies the name of a form. |
-| novalidate | novalidate | Specifies that the form should not be validated when submitted. |
-| target | • `_blank` <br>• `_self` <br>• `_parent` <br>• `_top` | Specifies where to display the response that is received after submitting the form. |
-
-#### Button `<button>` `</button>`
+#### 2.2.4 Button `<button>` `</button>`
 As its name implies, it will present interactable buttons on a page.
 
-##### Attributes
+##### 2.2.4.1 Attributes
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | autofocus | autofocus | Specifies that a button should automatically get focus when the page loads. |
@@ -161,7 +162,7 @@ As its name implies, it will present interactable buttons on a page.
 | type | • button <br>• reset <br>• submit | Specifies the type of button. |
 | value | text | Specifies an initial value for the button. |
 
-#### Label `<label>` `</label>`
+#### 2.2.5 Label `<label>` `</label>`
 The `<label>` tag defines a label for several elements:
 
 * `<input type="color">`
@@ -191,7 +192,7 @@ Proper use of labels with the elements above will benefit:
 
 The `for` attribute of the `<label>` tag should be equal to the `id` attribute of the related element to bind them together. 
 
-##### Attributes
+##### 2.2.5.1 Attributes
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | for | element_id | Specifies which form element a label is bound to. |
