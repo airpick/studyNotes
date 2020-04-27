@@ -10,7 +10,7 @@ Study is being performed concurrently on [Free Code Camp](https://www.freecodeca
 Any object in an html document is an element. 
 Elements require one to two tags (depending on whether they are self-closing or require a closing tag) in order to function correctly.
 
-ex: <p>This is a paragraph section.</p>
+ex: `<p>This is a paragraph section.</p>`
 
 ### Elements
 #### Comment `<!--` `-->`
@@ -113,7 +113,7 @@ Will allow the viewer to perform submit some type of input/interaction with the 
 | size | number | Specifies the width, in characters, of an `<input>` element. |
 | src | URL | Specifies the URL of the image to use as a submit button (only for type="image"). |
 | step | • number <br>• any | Specifies the interval between legal numbers in an input field. |
-| type | • button <br>• checkbox <br>• color <br>• date <br>• datetime-local <br>• email <br>• file <br>• hidden <br>• image <br>• month <br>• number <br>• password <br>• radio <br>• range <br>• reset <br>• search <br>•  <br>• submit <br>• tel <br>• text <br>•  <br>• time <br>• url <br>• week | Specifies the type `<input>` element to display. |
+| type | • button <br>• checkbox <br>• color <br>• date <br>• datetime-local <br>• email <br>• file <br>• hidden <br>• image <br>• month <br>• number <br>• password <br>• radio <br>• range <br>• reset <br>• search <br>• submit <br>• tel <br>• text <br>• time <br>• url <br>• week | Specifies the type `<input>` element to display. |
 | value | text | Specifies the value of an `<input>` element. |
 | width | pixels | Specifies the width of an `<input>` element (only for type="image"). |
 
