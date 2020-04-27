@@ -59,7 +59,7 @@ Lays anchor on a page which other things can be attached to, such as hyperlinks 
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | download | filename | Causes a download of the specified filename to occur if the user selects the anchor. |
-| href | (1) URL \n(2) `#id` | (1) Redirects the user to the URL selected. (2) Navigates the user to the the attribute which has the correlating `id` used within the current page. |
+| href | (1) URL <br>(2) `#id` | (1) Redirects the user to the URL selected. (2) Navigates the user to the the attribute which has the correlating `id` used within the current page. |
 | hreflang | language_code | Specifies the language used for the linked document. |
 | media | media_query | Specifies what media/device the linked document is optimized for. |
 | ping | list_of_URLs | Specifies a space-separated list of URLs to which, when the link is followed, post requests with the body ping will be sent by the browser (in the background). Typically used for tracking. |
