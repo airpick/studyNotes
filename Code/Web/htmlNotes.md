@@ -79,6 +79,11 @@ Displays the list in bullet points.
 ##### 2.1.9.2 Ordered `<ol>` `</ol>`
 Displays the list with numbers.
 
+#### 2.1.10 Div `<div>` `</div>`
+The `<div>` tag defines a division or a section in an HTML document.
+The `<div>` element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.
+`<div>` is most likely the most used element of all HTML.
+
 ### 2.2 Forms and Interactive Elements
 #### 2.2.1 Form `<form>` `</form>`
 Creates an HTML form for user input.
