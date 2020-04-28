@@ -110,6 +110,8 @@ Can contain one or more of the following form-type elements:
 Will allow the viewer to perform submit some type of input/interaction with the site.
 
 ##### 2.2.3.1 Attributes
+Important note: the `value` attribute is crucial for submitting data, as it helps to more verbosely communicate which input from a larger selection was used.
+
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | accept | • file_extension <br>• audio/* <br>• video/* <br>• image/* <br>• media_type | Specifies a filter for what file types the user can pick from the file input dialog box (only for type="file"). |
