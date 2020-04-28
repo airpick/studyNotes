@@ -127,6 +127,12 @@ The `<div>` tag defines a division or a section in an HTML document.
 The `<div>` element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.
 `<div>` is most likely the most used element of all HTML.
 
+#### 3.1.14 Class `class=""`
+While not an element, this attribute is essential for aiding in the application of CSS. 
+CSS can easily target classes to apply thematic changes to many different objects in a page in a manner more independent of the elements chosen.
+
+This helps to add a great deal of customization and efficiency to the appearance of a website.
+
 ### 3.2 Forms and Interactive Elements
 #### 3.2.1 Form `<form>` `</form>`
 Creates an HTML form for user input.
