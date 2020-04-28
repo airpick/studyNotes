@@ -68,5 +68,24 @@ Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA 
 * `background-color` defines background color
 * `border` can also have colors applied for the border of an element
 
-### 5.2 Font Size `font-size`
+### 5.2 Fonts 
+#### 5.2.1 Font Size `font-size`
 Determines how large or small a font is. 
+ex: `font-size: 12px;`
+
+Note that the `px` must be next to the number (no space).
+
+#### 5.2.2 Font Family `font-family`
+Sets the kind of font used.
+ex: `font-family: monospace;`
+
+Additionally, font-families are case-sensitive and must be contained within quotations if a space is needed.
+ex: `font-family: "Open Sans"`
+
+If the user specifies more than one font type for a value in a single property declaration, the second (and any after) will be fallback font types.
+ex: `font-family: monospace, sans-serif;`
+
+### 5.3 Sizing
+#### 5.3.1 Width `width`
+Controls the width of an object. 
+ex: `width: 500px;`
