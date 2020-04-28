@@ -28,13 +28,23 @@ Maybe the most important element, this allows the user to leave a comment.
 All HTML code should be contained within this element. 
 Typically, this is initiated just after the DOCTYPE declaration and continues for all HTML related code.
 
-#### 3.1.3 Header `<header>` `</header>`
+#### 3.1.3 Head `<head>` `</head>`
+This element will contain metadata relating to the page. 
+Typically, it is best to include this just after the DOCTYPE declaration and initial `<html>` element.
+
+#### 3.1.4 Body `<body>` `</body>`
+All content actually used for page display should be contained within this. 
+Think of it as the counterpart to the metadata contained in the `<head>` element. 
+
+It will most often be included just after the `</head>` element is closed.
+
+#### 3.1.5 Header `<header>` `</header>`
 Used as a container for introductory content or a set of navigation links.
 
-#### 3.1.4 Main `<main>` `</main>`
+#### 3.1.6 Main `<main>` `</main>`
 Used as a container for the main content of a webpage.
 
-#### 3.1.5 Footer `<footer>` `</footer>`
+#### 3.1.7 Footer `<footer>` `</footer>`
 User as a container which typically contains:
 
 * authorship info
@@ -42,7 +52,7 @@ User as a container which typically contains:
 * contact info
 * sitemap
 
-#### 3.1.6 Headers `<h#>` `</h#>`
+#### 3.1.8 Headers `<h#>` `</h#>`
 These help to separate sections and sub-sections on a website. 
 They also often link up to help provide an easy to read hierarchical display for pages with a large volume of content.
 
@@ -53,21 +63,21 @@ They also often link up to help provide an easy to read hierarchical display for
 * `<h5></h5>`
 * `<h6></h6>`
 
-#### 3.1.7 Paragraph `<p>` `</p>`
+#### 3.1.9 Paragraph `<p>` `</p>`
 As it's name implies.
 
-#### 3.1.8 Image `<img>`
+#### 3.1.10 Image `<img>`
 Used for each image on a webpage.
 In order for the image to display, the `src` attribute must be used.
 
-##### 3.1.8.1 Attributes
+##### 3.1.10.1 Attributes
 * `src`: used for the image's link
 * `alt`: used for the alternative text displayed when a user hovers their mouse over the image
 
-#### 3.1.9 Anchor `<a>` `</a>`
+#### 3.1.11 Anchor `<a>` `</a>`
 Lays anchor on a page which other things can be attached to, such as hyperlinks or internal references within the current page. 
 
-##### 3.1.9.1 Attributes
+##### 3.1.11.1 Attributes
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | download | filename | Causes a download of the specified filename to occur if the user selects the anchor. |
@@ -80,18 +90,18 @@ Lays anchor on a page which other things can be attached to, such as hyperlinks 
 | target | • `_blank` <br>• `_parent` <br>• `_self` <br>• `_top` <br>• `framename` | • Opens the document in a new window or tab. <br>• Opens the document in the same frame it was selected in (default). <br>• Opens the document in the parent frame. <br>• Opens the document in the full body of the window. <br>• Opens the document in a named frame. |
 | type | media_type | Specifies the media type of the linked document. |
 
-#### 3.1.10 Lists
+#### 3.1.12 Lists
 Each item within any list must be included within a `<li>` `</li>` element. 
 Each of these will represent one number or bullet point.
 These must be contained within either an Ordered or Unordered element.
 
-##### 3.1.10.1 Unordered `<ul>` `</ul>`
+##### 3.1.12.1 Unordered `<ul>` `</ul>`
 Displays the list in bullet points.
 
-##### 3.1.10.2 Ordered `<ol>` `</ol>`
+##### 3.1.12.2 Ordered `<ol>` `</ol>`
 Displays the list with numbers.
 
-#### 3.1.11 Div `<div>` `</div>`
+#### 3.1.13 Div `<div>` `</div>`
 The `<div>` tag defines a division or a section in an HTML document.
 The `<div>` element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.
 `<div>` is most likely the most used element of all HTML.
