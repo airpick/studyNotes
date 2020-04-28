@@ -1,6 +1,10 @@
 # HTML Notes
 ## Table of Contents
-xxx
+1. [Overview](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#overview)
+2. [DOCTYPE Declaration](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#2-doctype-declaration-doctype-)
+3. [Elements](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3-elements)
+  * [3.1 Basic Elements](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#31-basic-elements)
+  * [3.2 Forms and Interactive Elements](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#32-forms-and-interactive-elements)
 
 ## 1 Overview
 A quick and dirty reference page for all things HTML5. 
