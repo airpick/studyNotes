@@ -4,6 +4,8 @@
 2. [DOCTYPE Declaration](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#2-doctype-declaration-doctype-)
 3. [Elements](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3-elements)
     * [3.1 Basic Elements](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#31-basic-elements)
+        * [3.1.1 Comment](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#311-comment------)
+        * [3.1.2 HTML](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#312-html-html-html)
     * [3.2 Forms and Interactive Elements](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#32-forms-and-interactive-elements)
 
 ## 1 Overview
