@@ -6,23 +6,35 @@ xxx
 A quick and dirty reference page for all things HTML5. 
 Study is being performed concurrently on [Free Code Camp](https://www.freecodecamp.org/).
 
-## 2 Elements
+## 2 DOCTYPE Declaration `<!DOCTYPE ...>`
+The first line of any HTML document must contain a declaration which conveys the version of HTML used with the browser. 
+This will look like `<!DOCTYPE ...>`, but with the elliipsis (`...`) replaced with the HTML version in use. 
+
+`DOCTYPE` itself must be capitalized to provide compatibility with older browsers, but the version itself does not require case-sensitivity.
+
+To elegantly declare HTML5 as the version, use `<!DOCTYPE html>`.
+
+## 3 Elements
 Any object in an html document is an element. 
 Elements require one to two tags (depending on whether they are self-closing or require a closing tag) in order to function correctly.
 
 ex: `<p>This is a paragraph section.</p>`
 
-### 2.1 Basic Elements
-#### 2.1.1 Comment `<!--` `-->`
+### 3.1 Basic Elements
+#### 3.1.1 Comment `<!--` `-->`
 Maybe the most important element, this allows the user to leave a comment.
 
-#### 2.1.2 Header `<header>` `</header>`
+#### 3.1.2 HTML `<html>` `</html>`
+All HTML code should be contained within this element. 
+Typically, this is initiated just after the DOCTYPE declaration and continues for all HTML related code.
+
+#### 3.1.3 Header `<header>` `</header>`
 Used as a container for introductory content or a set of navigation links.
 
-#### 2.1.3 Main `<main>` `</main>`
+#### 3.1.4 Main `<main>` `</main>`
 Used as a container for the main content of a webpage.
 
-#### 2.1.4 Footer `<footer>` `</footer>`
+#### 3.1.5 Footer `<footer>` `</footer>`
 User as a container which typically contains:
 
 * authorship info
@@ -30,7 +42,7 @@ User as a container which typically contains:
 * contact info
 * sitemap
 
-#### 2.1.5 Headers `<h#>` `</h#>`
+#### 3.1.6 Headers `<h#>` `</h#>`
 These help to separate sections and sub-sections on a website. 
 They also often link up to help provide an easy to read hierarchical display for pages with a large volume of content.
 
@@ -41,21 +53,21 @@ They also often link up to help provide an easy to read hierarchical display for
 * `<h5></h5>`
 * `<h6></h6>`
 
-#### 2.1.6 Paragraph `<p>` `</p>`
+#### 3.1.7 Paragraph `<p>` `</p>`
 As it's name implies.
 
-#### 2.1.7 Image `<img>`
+#### 3.1.8 Image `<img>`
 Used for each image on a webpage.
 In order for the image to display, the `src` attribute must be used.
 
-##### 2.1.7.1 Attributes
+##### 3.1.8.1 Attributes
 * `src`: used for the image's link
 * `alt`: used for the alternative text displayed when a user hovers their mouse over the image
 
-#### 2.1.8 Anchor `<a>` `</a>`
+#### 3.1.9 Anchor `<a>` `</a>`
 Lays anchor on a page which other things can be attached to, such as hyperlinks or internal references within the current page. 
 
-##### 2.1.8.1 Attributes
+##### 3.1.9.1 Attributes
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | download | filename | Causes a download of the specified filename to occur if the user selects the anchor. |
@@ -68,24 +80,24 @@ Lays anchor on a page which other things can be attached to, such as hyperlinks 
 | target | • `_blank` <br>• `_parent` <br>• `_self` <br>• `_top` <br>• `framename` | • Opens the document in a new window or tab. <br>• Opens the document in the same frame it was selected in (default). <br>• Opens the document in the parent frame. <br>• Opens the document in the full body of the window. <br>• Opens the document in a named frame. |
 | type | media_type | Specifies the media type of the linked document. |
 
-#### 2.1.9 Lists
+#### 3.1.10 Lists
 Each item within any list must be included within a `<li>` `</li>` element. 
 Each of these will represent one number or bullet point.
 These must be contained within either an Ordered or Unordered element.
 
-##### 2.1.9.1 Unordered `<ul>` `</ul>`
+##### 3.1.10.1 Unordered `<ul>` `</ul>`
 Displays the list in bullet points.
 
-##### 2.1.9.2 Ordered `<ol>` `</ol>`
+##### 3.1.10.2 Ordered `<ol>` `</ol>`
 Displays the list with numbers.
 
-#### 2.1.10 Div `<div>` `</div>`
+#### 3.1.11 Div `<div>` `</div>`
 The `<div>` tag defines a division or a section in an HTML document.
 The `<div>` element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.
 `<div>` is most likely the most used element of all HTML.
 
-### 2.2 Forms and Interactive Elements
-#### 2.2.1 Form `<form>` `</form>`
+### 3.2 Forms and Interactive Elements
+#### 3.2.1 Form `<form>` `</form>`
 Creates an HTML form for user input.
 Can contain one or more of the following form-type elements:
 
@@ -99,7 +111,7 @@ Can contain one or more of the following form-type elements:
 * `<label>`
 * `<output>`
 
-##### 2.2.1.1 Attributes
+##### 3.2.1.1 Attributes
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | accept-charset | character_set | Specifies the character encodings that are to be used for the form submission. |
@@ -111,10 +123,10 @@ Can contain one or more of the following form-type elements:
 | novalidate | novalidate | Specifies that the form should not be validated when submitted. |
 | target | • `_blank` <br>• `_self` <br>• `_parent` <br>• `_top` | Specifies where to display the response that is received after submitting the form. |
 
-#### 2.2.3 Input `<input>`
+#### 3.2.3 Input `<input>`
 Will allow the viewer to perform submit some type of input/interaction with the site.
 
-##### 2.2.3.1 Attributes
+##### 3.2.3.1 Attributes
 Important note: the `value` attribute is crucial for submitting data, as it helps to more verbosely communicate which input from a larger selection was used.
 
 | Attribute | Value | Description |
@@ -151,10 +163,10 @@ Important note: the `value` attribute is crucial for submitting data, as it help
 | value | text | Specifies the value of an `<input>` element. |
 | width | pixels | Specifies the width of an `<input>` element (only for type="image"). |
 
-#### 2.2.4 Button `<button>` `</button>`
+#### 3.2.4 Button `<button>` `</button>`
 As its name implies, it will present interactable buttons on a page.
 
-##### 2.2.4.1 Attributes
+##### 3.2.4.1 Attributes
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | autofocus | autofocus | Specifies that a button should automatically get focus when the page loads. |
@@ -169,7 +181,7 @@ As its name implies, it will present interactable buttons on a page.
 | type | • button <br>• reset <br>• submit | Specifies the type of button. |
 | value | text | Specifies an initial value for the button. |
 
-#### 2.2.5 Label `<label>` `</label>`
+#### 3.2.5 Label `<label>` `</label>`
 The `<label>` tag defines a label for several elements:
 
 * `<input type="color">`
@@ -199,7 +211,7 @@ Proper use of labels with the elements above will benefit:
 
 The `for` attribute of the `<label>` tag should be equal to the `id` attribute of the related element to bind them together. 
 
-##### 2.2.5.1 Attributes
+##### 3.2.5.1 Attributes
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | for | element_id | Specifies which form element a label is bound to. |
