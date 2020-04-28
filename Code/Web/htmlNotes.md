@@ -6,7 +6,22 @@
     * [3.1 Basic Elements](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#31-basic-elements)
         * [3.1.1 Comment](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#311-comment------)
         * [3.1.2 HTML](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#312-html-html-html)
+        * [3.1.3 Head](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#313-head-head-head)
+        * [3.1.4 Body](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#314-body-body-body)
+        * [3.1.5 Header](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#315-header-header-header)
+        * [3.1.6 Main](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#316-main-main-main)
+        * [3.1.7 Footer](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#317-footer-footer-footer)
+        * [3.1.8 Headers](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#318-headers-h-h)
+        * [3.1.9 Paragraph](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#319-paragraph-p-p)
+        * [3.1.10 Image](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3110-image-img)
+        * [3.1.11 Anchor](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3111-anchor-a-a)
+        * [3.1.12 Lists](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3112-lists)
+        * [3.1.13 Div](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3113-div-div-div)
     * [3.2 Forms and Interactive Elements](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#32-forms-and-interactive-elements)
+        * [3.2.1 Form](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#321-form-form-form)
+        * [3.2.2 Input](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#322-input-input)
+        * [3.2.3 Button](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#323-button-button-button)
+        * [3.2.4 Label](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#324-label-label-label)
 
 ## 1 Overview
 A quick and dirty reference page for all things HTML5. 
@@ -139,10 +154,10 @@ Can contain one or more of the following form-type elements:
 | novalidate | novalidate | Specifies that the form should not be validated when submitted. |
 | target | • `_blank` <br>• `_self` <br>• `_parent` <br>• `_top` | Specifies where to display the response that is received after submitting the form. |
 
-#### 3.2.3 Input `<input>`
+#### 3.2.2 Input `<input>`
 Will allow the viewer to perform submit some type of input/interaction with the site.
 
-##### 3.2.3.1 Attributes
+##### 3.2.2.1 Attributes
 Important note: the `value` attribute is crucial for submitting data, as it helps to more verbosely communicate which input from a larger selection was used.
 
 | Attribute | Value | Description |
@@ -179,10 +194,10 @@ Important note: the `value` attribute is crucial for submitting data, as it help
 | value | text | Specifies the value of an `<input>` element. |
 | width | pixels | Specifies the width of an `<input>` element (only for type="image"). |
 
-#### 3.2.4 Button `<button>` `</button>`
+#### 3.2.3 Button `<button>` `</button>`
 As its name implies, it will present interactable buttons on a page.
 
-##### 3.2.4.1 Attributes
+##### 3.2.3.1 Attributes
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | autofocus | autofocus | Specifies that a button should automatically get focus when the page loads. |
@@ -197,7 +212,7 @@ As its name implies, it will present interactable buttons on a page.
 | type | • button <br>• reset <br>• submit | Specifies the type of button. |
 | value | text | Specifies an initial value for the button. |
 
-#### 3.2.5 Label `<label>` `</label>`
+#### 3.2.4 Label `<label>` `</label>`
 The `<label>` tag defines a label for several elements:
 
 * `<input type="color">`
@@ -227,7 +242,7 @@ Proper use of labels with the elements above will benefit:
 
 The `for` attribute of the `<label>` tag should be equal to the `id` attribute of the related element to bind them together. 
 
-##### 3.2.5.1 Attributes
+##### 3.2.4.1 Attributes
 | Attribute | Value | Description |
 | ---- | ---- | ---- |
 | for | element_id | Specifies which form element a label is bound to. |
