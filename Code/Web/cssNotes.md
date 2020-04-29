@@ -59,6 +59,21 @@ As the example in `2 Formatting` highlights, a *selector* can point to HTML elem
 If the *selector* begins with a `.`, this indicates that only elements which contain a corresponding `class` attribute will be impacted. 
 ex: `.blue-text {color: blue;}` will affect any HTML element which has `class="blue-text"` declared.
 
+### 4.3 ID
+IDs also aid in using CSS to quickly style a single element.
+To adjust the ID in external or internal CSS, simply include a `#` at the beginning of the *selector*.
+
+ex: `#unique-id {color: green;}`
+
+JavaScript is also able to quickly select and modify specific elements.
+
+Best practice is to have IDs be unique (although this is not enforced by the browser).
+As such, try not to assign the same ID to multiple elements.
+
+### 4.4 Attributes
+This selector matches and styles elements with a specific attribute value.
+
+ex: `[type='radio'] margin: 10px}`
 
 ## 5 Properties
 ### 5.1 Colors `color`
@@ -120,4 +135,38 @@ Possible borders:
 Smoothes the edges of a border to make it less boxy.
 ex: `border-radius: 10px;`
 
-Border radii can also be set to percentages, such as `50%`. 
+Border radii can also be set to percentages, such as `50%`.
+
+### 5.5 Padding `padding`
+Padding controls the amount of space between an element's content and its *border*.
+CSS allows you to control the padding of all four individual sides of an element using the following properties:
+
+* `padding-top`
+* `padding-right`
+* `padding-bottom`
+* `padding-left`
+
+#### 5.5.1 Clockwise Notation
+Instead of specifying an element's top, right, bottom, and left properties individually, you can specify them all in one line.
+ex: `padding: 10px 20px 10px 20px;`
+
+These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific padding instructions.
+
+### 5.6 Margin `margin`
+An element's margin controls the amount of space between an element's border and surrounding elements.
+If you set an element's margin to a negative value, the element will grow larger.
+
+ex: `.blue-box {margin= -15px;}`
+
+CSS allows you to control the margin of all four individual sides of an element using the following properties:
+
+* `margin-top`
+* `margin-right`
+* `margin-bottom`
+* `margin-left`
+
+#### 5.6.1 Clockwise Notation
+Instead of specifying an element's top, right, bottom, and left properties individually, you can specify them all in one line.
+ex: `margin: 10px 20px 10px 20px;`
+
+These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.
