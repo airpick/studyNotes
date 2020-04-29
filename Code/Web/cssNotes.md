@@ -68,7 +68,7 @@ Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA 
 * `background-color` defines background color
 * `border` can also have colors applied for the border of an element
 
-### 5.2 Fonts 
+### 5.2 Fonts
 #### 5.2.1 Font Size `font-size`
 Determines how large or small a font is. 
 ex: `font-size: 12px;`
@@ -89,3 +89,35 @@ ex: `font-family: monospace, sans-serif;`
 #### 5.3.1 Width `width`
 Controls the width of an object. 
 ex: `width: 500px;`
+
+### 5.4 Borders
+#### 5.4.1 Border Color `border-color`
+Defines the color used for the border.
+ex: `border-color: red;`
+
+#### 5.4.2 Border Width `border-width`
+Sets the width of a border.
+ex: `border-width: 5px;`
+
+#### 5.4.3 Border Style `border-style`
+Determines the style of a border.
+ex: `border-style: solid;`
+
+Possible borders:
+
+* `dotted`
+* `dashed`
+* `solid`
+* `double`
+* `groove`
+* `ridge`
+* `inset`
+* `outset`
+* `none`
+* `hidden`
+
+#### 5.4.4 Border Radius `border-radius`
+Smoothes the edges of a border to make it less boxy.
+ex: `border-radius: 10px;`
+
+Border radii can also be set to percentages, such as `50%`. 

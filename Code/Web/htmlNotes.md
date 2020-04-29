@@ -22,6 +22,11 @@
         * [3.2.2 Input](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#322-input-input)
         * [3.2.3 Button](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#323-button-button-button)
         * [3.2.4 Label](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#324-label-label-label)
+4. [Other Important Features](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#4-other-important-features)
+    * [4.1 Organizational Attributes](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#41-organizational-attributes)
+        * [4.1.1 Class](#)
+        * [4.1.2 ID](#)
+
 
 ## 1 Overview
 A quick and dirty reference page for all things HTML5. 
@@ -126,12 +131,6 @@ Displays the list with numbers.
 The `<div>` tag defines a division or a section in an HTML document.
 The `<div>` element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.
 `<div>` is most likely the most used element of all HTML.
-
-#### 3.1.14 Class `class=""`
-While not an element, this attribute is essential for aiding in the application of CSS. 
-CSS can easily target classes to apply thematic changes to many different objects in a page in a manner more independent of the elements chosen.
-
-This helps to add a great deal of customization and efficiency to the appearance of a website.
 
 ### 3.2 Forms and Interactive Elements
 #### 3.2.1 Form `<form>` `</form>`
@@ -253,3 +252,18 @@ The `for` attribute of the `<label>` tag should be equal to the `id` attribute o
 | ---- | ---- | ---- |
 | for | element_id | Specifies which form element a label is bound to. |
 | form | form_id | Specifies which form the label belongs to. |
+
+## 4 Other Important Features
+### 4.1 Organizational Attributes
+#### 4.1.1 Class `class=""`
+While not an element, this attribute is essential for aiding in the application of CSS. 
+CSS can easily target classes to apply thematic changes to many different objects in a page in a manner more independent of the elements chosen.
+
+This helps to add a great deal of customization and efficiency to the appearance of a website.
+
+#### 4.1.2 ID `id=""`
+IDs also aid in using CSS to quickly style a single element.
+JavaScript is also able to quickly select and modify specific elements.
+
+Best practice is to have IDs be unique (although this is not enforced by the browser).
+As such, try not to assign the same ID to multiple elements.
