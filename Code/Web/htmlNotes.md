@@ -24,8 +24,8 @@
         * [3.2.4 Label](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#324-label-label-label)
 4. [Other Important Features](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#4-other-important-features)
     * [4.1 Organizational Attributes](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#41-organizational-attributes)
-        * [4.1.1 Class](#)
-        * [4.1.2 ID](#)
+        * [4.1.1 Class](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#411-class-class)
+        * [4.1.2 ID](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#412-id-id)
 
 
 ## 1 Overview
