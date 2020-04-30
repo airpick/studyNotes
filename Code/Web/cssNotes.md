@@ -181,3 +181,15 @@ Relative units, such as `em` or `rem`, are relative to another length value.
 For example, `em` is based on the size of an element's font. 
 
 If you use it to set the `font-size` property itself, it's relative to the parent's `font-size`.
+
+## 7 Prioritization
+When applying CSS to any element, the following hierarchy is observed (in order of least to highest priority):
+
+* internal/external element
+* internal/external class
+* internal/external id
+* inline
+* `!important` (this is an attribute which can be applied for any CSS declaration)
+
+In addition to this, styles of equal priority are applied top to bottom.
+In other words, if two internal styles for `h1` exist, only the one applied lowest in `<style>` will be observed.
