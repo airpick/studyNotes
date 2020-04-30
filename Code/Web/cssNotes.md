@@ -170,3 +170,14 @@ Instead of specifying an element's top, right, bottom, and left properties indiv
 ex: `margin: 10px 20px 10px 20px;`
 
 These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.
+
+## 6 Units of Measurement
+### 6.1 Absolute Units
+Absolute units tie to physical units of length, such as `in` or `mm`.
+Absolute length units approximate the actual measurement on a screen, but there are some differences depending on a screen's resolution.
+
+### 6.2 Relative Units
+Relative units, such as `em` or `rem`, are relative to another length value. 
+For example, `em` is based on the size of an element's font. 
+
+If you use it to set the `font-size` property itself, it's relative to the parent's `font-size`.
