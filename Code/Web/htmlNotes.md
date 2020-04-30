@@ -64,6 +64,8 @@ Think of it as the counterpart to the metadata contained in the `<head>` element
 
 It will most often be included just after the `</head>` element is closed.
 
+By default, even if not declared all space within an HTML document not otherwise specified as by a different section element will be considered a body.
+
 #### 3.1.5 Header `<header>` `</header>`
 Used as a container for introductory content or a set of navigation links.
 
