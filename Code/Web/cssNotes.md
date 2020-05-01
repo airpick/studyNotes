@@ -142,6 +142,15 @@ ex: `font-family: "Open Sans"`
 If the user specifies more than one font type for a value in a single property declaration, the second (and any after) will be fallback font types.
 ex: `font-family: monospace, sans-serif;`
 
+#### 5.2.3 Font Weight `font-weight`
+The `font-weight` property sets how thick or thin characters in text should be displayed.
+Some available options are:
+
+* `normal`
+* `bold`
+* `bolder`
+* `lighter`
+
 ### 5.3 Sizing
 #### 5.3.1 Width `width`
 Controls the width of an object. 
