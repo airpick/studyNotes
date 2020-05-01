@@ -17,6 +17,7 @@
         * [3.1.11 Anchor](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3111-anchor-a-a)
         * [3.1.12 Lists](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3112-lists)
         * [3.1.13 Div](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3113-div-div-div)
+        * [3.1.14 Strong](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3114-strong)
     * [3.2 Forms and Interactive Elements](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#32-forms-and-interactive-elements)
         * [3.2.1 Form](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#321-form-form-form)
         * [3.2.2 Input](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#322-input-input)
@@ -133,6 +134,9 @@ Displays the list with numbers.
 The `<div>` tag defines a division or a section in an HTML document.
 The `<div>` element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.
 `<div>` is most likely the most used element of all HTML.
+
+#### 3.1.14 Strong `<strong>` `</strong>`
+Makes the text within bold. 
 
 ### 3.2 Forms and Interactive Elements
 #### 3.2.1 Form `<form>` `</form>`
