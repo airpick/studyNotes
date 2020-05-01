@@ -86,6 +86,24 @@ The syntax of the `var()` function is as follows: `var(custom-name, value)`.
 * `custom-name` is required; it is the name used for the variable during declaration.
 * `value` is optional; it is the fallback value used if the custom property is invalid.
 
+### 4.6 Psuedo-Class
+A pseudo-class is used to define a special state of an element, such as:
+
+* Style an element when a user mouses over it
+* Style visited and unvisited links differently
+* Style an element when it gets focus
+
+ex: `selector:pseudo-class {property: value;}`
+
+#### 4.6.1 `:root`
+When you create a variable, it is available for you to use inside the selector in which you create it. 
+It also is available in any of that selector's descendants/children. This happens because CSS variables are inherited, just like ordinary properties.
+
+To make use of inheritance, CSS variables are often defined in the `:root` psuedo-class selector.
+
+`:root` is a pseudo-class selector that matches the root element of the document, usually the `html` element. 
+By creating your variables in `:root`, they will be available globally and can be accessed from any other selector in the style sheet.
+
 ## 5 Properties
 ### 5.1 Colors `color`
 Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
