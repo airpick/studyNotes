@@ -193,3 +193,20 @@ When applying CSS to any element, the following hierarchy is observed (in order 
 
 In addition to this, styles of equal priority are applied top to bottom.
 In other words, if two internal styles for `h1` exist, only the one applied lowest in `<style>` will be observed.
+
+## 8 Color
+Here are the ways in which color can be represented in CSS.
+
+### 8.1 Color 
+ex: `purple`, `blue`, `brown`
+
+A [pre-defined list](https://www.w3schools.com/cssref/css_colors.asp) of colors which allow for quick use/review.
+
+### 8.2 Hex
+ex: `#000000`, `#fefefe`
+6 hexadecimal digits represent colors, with two each for the red (R), green (G), and blue (B) components.
+From these three pure colors (red, green, and blue), we can vary the amounts of each to create over 16 million other colors!
+
+For another example, orange is pure red, mixed with some green, and no blue. In hex code, this translates to being #FFA500.
+
+Using shorthand, red's hex code #FF0000 can be shortened to #F00. This shortened form gives one digit for red, one digit for green, and one digit for blue.
