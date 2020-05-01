@@ -147,6 +147,10 @@ ex: `font-family: monospace, sans-serif;`
 Controls the width of an object. 
 ex: `width: 500px;`
 
+#### 5.3.2 Height `height`
+Controls the height of an object.
+ex: `height: 200px;`
+
 ### 5.4 Borders
 #### 5.4.1 Border Color `border-color`
 Defines the color used for the border.
