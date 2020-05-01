@@ -75,6 +75,17 @@ This selector matches and styles elements with a specific attribute value.
 
 ex: `[type='radio'] margin: 10px}`
 
+### 4.5 Variables
+Variables in CSS should be declared within a CSS selector.
+For a global scope you can use either the :root or the body selector.
+
+Variable names must begin with two dashes (--) and are case sensitive.
+ex: `--myVar`
+
+The syntax of the `var()` function is as follows: `var(custom-name, value)`.
+* `custom-name` is required; it is the name used for the variable during declaration.
+* `value` is optional; it is the fallback value used if the custom property is invalid.
+
 ## 5 Properties
 ### 5.1 Colors `color`
 Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
@@ -207,6 +218,9 @@ ex: `#000000`, `#fefefe`
 6 hexadecimal digits represent colors, with two each for the red (R), green (G), and blue (B) components.
 From these three pure colors (red, green, and blue), we can vary the amounts of each to create over 16 million other colors!
 
-For another example, orange is pure red, mixed with some green, and no blue. In hex code, this translates to being #FFA500.
+For another example, orange is pure red, mixed with some green, and no blue. In hex code, this translates to being `#FFA500`.
 
-Using shorthand, red's hex code #FF0000 can be shortened to #F00. This shortened form gives one digit for red, one digit for green, and one digit for blue.
+Using shorthand, red's hex code `#FF0000` can be shortened to `#F00`. This shortened form gives one digit for red, one digit for green, and one digit for blue.
+
+### 8.3 RGB
+ex: `rgb(0, 0, 0)`, `rgb(255, 255, 255)`
