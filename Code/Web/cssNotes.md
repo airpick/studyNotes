@@ -213,6 +213,16 @@ ex: `margin: 10px 20px 10px 20px;`
 
 These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.
 
+### 5.7 Text
+#### 5.7.1 Text Align `text-align`
+Controls alignment of the text relative to the page. 
+Available alignment types are:
+
+* `justify`: causes all lines of text except the last line to meet the left and right edges of the line box
+* `left`: selected by default - left-aligns the text
+* `right`: right-aligns the text
+* `center`: centers the text
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
