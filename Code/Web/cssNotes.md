@@ -236,6 +236,18 @@ Available alignment types are:
 * `right`: right-aligns the text
 * `center`: centers the text
 
+#### 5.7.2 Text Decoration `text-decoration`
+The text-decoration property specifies the decoration added to text, such as an underline.
+In addition, there are sub-properties which allow the color and style of the decoration as well if such granularity is needed.
+
+Some `text-decoration-line` options include:
+
+* `underline`
+* `overline`
+* `line-through`
+
+ex: `h1 {text-decoration: underline overline dotted red;}`
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
