@@ -104,6 +104,19 @@ To make use of inheritance, CSS variables are often defined in the `:root` psued
 `:root` is a pseudo-class selector that matches the root element of the document, usually the `html` element. 
 By creating your variables in `:root`, they will be available globally and can be accessed from any other selector in the style sheet.
 
+### 4.7 Media Queries
+The `@media` selector looks at the capability of the device and allows different styles to be applied based on the capabilities available.
+ex: `@media screen and (min-width: 480px) {body {background-color: lightgreen;}}`
+
+Media queries can be used to check many things, such as:
+
+* width and height of the viewport
+* width and height of the device
+* orientation (is the tablet/phone in landscape or portrait mode?)
+* resolution
+
+Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones.
+
 ## 5 Properties
 ### 5.1 Colors `color`
 Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
