@@ -224,3 +224,9 @@ Using shorthand, red's hex code `#FF0000` can be shortened to `#F00`. This short
 
 ### 8.3 RGB
 ex: `rgb(0, 0, 0)`, `rgb(255, 255, 255)`
+
+## 9 Increasing Browser Compatibility
+When using some things, such as variables, certain browsers will be unable to support this layout. 
+In order to provide better back-ups for compatibility, best practice dictates declaring the back-ups in a supported format *before* those which may have compatibility issues.
+
+This allows the value to be overwritten in the cascade when the initially desired feature is supported.
