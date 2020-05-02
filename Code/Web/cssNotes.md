@@ -301,13 +301,24 @@ The opacity property in CSS is used to adjust the opacity, or conversely, the tr
 Determines the distance between each line for text which is displayed in multiple lines.
 ex: `p {line-height: 25px;}`
 
-### 5.11 Relative `relative`
-When the position of an element is set to `relative`, it allows you to specify how CSS should move it relative to its current position in the normal flow of the page. 
+### 5.11 Position `position`
+Sets the position of an element.
+See Section 10: CSS Box Model for more information on how each element has layout within a page.
+
+#### 5.11.1 Relative `relative`
+When the `position` of an element is set to `relative`, it allows you to specify how CSS should move it relative to its current position in the normal flow of the page. 
 
 It pairs with the CSS offset properties of `left` or `right`, and `top` or `bottom`.
 These say how many pixels, percentages, or ems to move the item ***away*** from where it is normally positioned.
 
 ex: `p {position: relative; bottom: 10px;}`
+
+#### 5.11.2 Absolute `absolute`
+Locks the element in place relative to its parent container.
+Unlike the `relative` position, this removes the element from the normal flow of the document, so surrounding items ignore it. 
+
+One nuance with `absolute` positioning is that it will be locked relative to its closest positioned ancestor. 
+If you forget to add a position rule to the parent item, (this is typically done using `position: relative;`), the browser will keep looking up the chain and ultimately default to the `body` tag.
 
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
