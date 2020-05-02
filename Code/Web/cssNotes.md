@@ -320,6 +320,10 @@ Unlike the `relative` position, this removes the element from the normal flow of
 One nuance with `absolute` positioning is that it will be locked relative to its closest positioned ancestor. 
 If you forget to add a position rule to the parent item, (this is typically done using `position: relative;`), the browser will keep looking up the chain and ultimately default to the `body` tag.
 
+#### 5.11.3 Fixed `fixed`
+Similar to `absolute` positioning, it's used with the CSS offset properties and also removes the element from the normal flow of the document.
+One key difference between the `fixed` and `absolute` positions is that an element with a fixed position won't move when the user scrolls.
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
