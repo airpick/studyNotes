@@ -257,6 +257,21 @@ Some `text-decoration-line` options include:
 
 ex: `h1 {text-decoration: underline overline dotted red;}`
 
+#### 5.7.3 Text Transform `text-transform`
+The `text-transform` property in CSS is used to change the appearance of text. 
+It's a convenient way to make sure text on a webpage appears consistently, without having to change the text content of the actual HTML elements.
+
+The following table shows how the different `text-transform` values change the example text "Transform me".
+
+| Value | Result |
+| ---- | ---- |
+| lowercase | "transform me" |
+| uppercase | "TRANSFORM ME" |
+| capitalize | "Transform Me" |
+| initial | Use the default value |
+| inherit | Use the text-transform value from the parent element |
+| none | Default - Use the original text |
+
 ### 5.8 Box
 #### 5.8.1 Box Shadow `box-shadow`
 The `box-shadow` property applies one or more shadows to an element.
