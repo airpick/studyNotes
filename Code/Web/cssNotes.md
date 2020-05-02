@@ -292,6 +292,11 @@ The opacity property in CSS is used to adjust the opacity, or conversely, the tr
 * A value of 0.5 is half see-through
 * A value of 0 is completely transparent
 
+### 5.10 Line
+#### 5.10.1 Line Height `line-height`
+Determines the distance between each line for text which is displayed in multiple lines.
+ex: `p {line-height: 25px;}`
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
