@@ -270,6 +270,13 @@ The box-shadow property takes values for
 
 ex: `box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);`
 
+### 5.9 Opacity `opacity`
+The opacity property in CSS is used to adjust the opacity, or conversely, the transparency for an item.
+
+* A value of 1 is opaque, which isn't transparent at all
+* A value of 0.5 is half see-through
+* A value of 0 is completely transparent
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
