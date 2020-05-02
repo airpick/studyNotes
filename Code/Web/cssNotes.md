@@ -297,7 +297,13 @@ For another example, orange is pure red, mixed with some green, and no blue. In 
 Using shorthand, red's hex code `#FF0000` can be shortened to `#F00`. This shortened form gives one digit for red, one digit for green, and one digit for blue.
 
 ### 8.3 RGB
+Colors from 0 to 255 for red, green, and blue.
 ex: `rgb(0, 0, 0)`, `rgb(255, 255, 255)`
+
+### 8.4 RGBA
+Same as RGB, but with an added `Alpha` value which determines a level of opacity. 
+Unlike the RGB values, A is measured from 0 (fully transparent) to 1 (fully opaque).
+ex: `rgba(255, 0, 255, 0.5)`
 
 ## 9 Increasing Browser Compatibility
 When using some things, such as variables, certain browsers will be unable to support this layout. 
