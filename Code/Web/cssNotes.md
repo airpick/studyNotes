@@ -301,6 +301,14 @@ The opacity property in CSS is used to adjust the opacity, or conversely, the tr
 Determines the distance between each line for text which is displayed in multiple lines.
 ex: `p {line-height: 25px;}`
 
+### 5.11 Relative `relative`
+When the position of an element is set to `relative`, it allows you to specify how CSS should move it relative to its current position in the normal flow of the page. 
+
+It pairs with the CSS offset properties of `left` or `right`, and `top` or `bottom`.
+These say how many pixels, percentages, or ems to move the item ***away*** from where it is normally positioned.
+
+ex: `p {position: relative; bottom: 10px;}`
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
