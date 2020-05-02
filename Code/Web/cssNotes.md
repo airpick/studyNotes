@@ -105,6 +105,10 @@ To make use of inheritance, CSS variables are often defined in the `:root` psued
 `:root` is a pseudo-class selector that matches the root element of the document, usually the `html` element. 
 By creating your variables in `:root`, they will be available globally and can be accessed from any other selector in the style sheet.
 
+#### 4.6.2 `:hover`
+Changes the hover state behavior (when you hover a mouse over an object) for the element assigned.
+ex: `a:hover {color: red;}` This will change the hover state for all anchor `<a>` elements.
+
 ### 4.7 Media Queries
 The `@media` selector looks at the capability of the device and allows different styles to be applied based on the capabilities available.
 ex: `@media screen and (min-width: 480px) {body {background-color: lightgreen;}}`
