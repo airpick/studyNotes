@@ -305,6 +305,9 @@ ex: `p {line-height: 25px;}`
 Sets the position of an element.
 See Section 10: CSS Box Model for more information on how each element has layout within a page.
 
+When elements are positioned to overlap (i.e. using `position: absolute | relative | fixed | sticky`), the element coming later in the HTML markup will, by default, appear on the top of the other elements.
+To change this, see the 5.12 Overlapping & the Z-Index section.
+
 #### 5.11.1 Relative `relative`
 When the `position` of an element is set to `relative`, it allows you to specify how CSS should move it relative to its current position in the normal flow of the page. 
 
@@ -324,7 +327,10 @@ If you forget to add a position rule to the parent item, (this is typically done
 Similar to `absolute` positioning, it's used with the CSS offset properties and also removes the element from the normal flow of the document.
 One key difference between the `fixed` and `absolute` positions is that an element with a fixed position won't move when the user scrolls.
 
-### 5.12 Float `float`
+### 5.12 Overlapping & the Z-Index `z-index`
+The `z-index` property can specify the order of how elements are stacked on top of one another. It must be an integer (i.e. a whole number and not a decimal), and higher values for the `z-index` property of an element move it higher in the stack than those with lower values.
+
+### 5.13 Float `float`
 Floating elements are removed from the normal flow of a document and pushed to either the `left` or `right` of their containing parent element. 
 It's commonly used with the width property to specify how much horizontal space the floated element requires.
 
