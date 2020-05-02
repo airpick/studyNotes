@@ -355,3 +355,8 @@ When using some things, such as variables, certain browsers will be unable to su
 In order to provide better back-ups for compatibility, best practice dictates declaring the back-ups in a supported format *before* those which may have compatibility issues.
 
 This allows the value to be overwritten in the cascade when the initially desired feature is supported.
+
+## 10 CSS Box Model
+CSS treats each HTML element as its own box, which is usually referred to as the *CSS Box Model*. Block-level items automatically start on a new line (think headings, paragraphs, and divs) while inline items sit within surrounding content (like images or spans). The default layout of elements in this way is called the normal flow of a document. 
+
+CSS also offers the `position` property to override the default layout settings of an element.
