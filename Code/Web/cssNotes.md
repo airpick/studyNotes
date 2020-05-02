@@ -233,6 +233,9 @@ CSS allows you to control the margin of all four individual sides of an element 
 * `margin-bottom`
 * `margin-left`
 
+Additionally, you can center an element using the `auto` value for this property.
+ex: `div {margin: auto;}`
+
 #### 5.6.1 Clockwise Notation
 Instead of specifying an element's top, right, bottom, and left properties individually, you can specify them all in one line.
 ex: `margin: 10px 20px 10px 20px;`
