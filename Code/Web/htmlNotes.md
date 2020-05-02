@@ -137,6 +137,11 @@ The `<div>` element is often used as a container for other HTML elements to styl
 
 #### 3.1.14 Strong `<strong>` `</strong>`
 Makes the text within bold. 
+Technically speaking, the browser applies the CSS style `font-weight: bold` to the text.
+
+#### 3.1.15 Underline `<u>` `</u>`
+With the `<u>` element, the browser applies the CSS of `text-decoration: underline;` to the element.
+This causes the text to be underlined.
 
 ### 3.2 Forms and Interactive Elements
 #### 3.2.1 Form `<form>` `</form>`
