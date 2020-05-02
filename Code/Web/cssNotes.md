@@ -324,6 +324,12 @@ If you forget to add a position rule to the parent item, (this is typically done
 Similar to `absolute` positioning, it's used with the CSS offset properties and also removes the element from the normal flow of the document.
 One key difference between the `fixed` and `absolute` positions is that an element with a fixed position won't move when the user scrolls.
 
+### 5.12 Float `float`
+Floating elements are removed from the normal flow of a document and pushed to either the `left` or `right` of their containing parent element. 
+It's commonly used with the width property to specify how much horizontal space the floated element requires.
+
+ex: `h2 {float:right;}`
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
