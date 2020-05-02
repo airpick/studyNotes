@@ -21,6 +21,7 @@
         * [3.1.15 Underline](https://github.com/airpick/studyNotes/blob/feat/appliedVisualDesign/Code/Web/htmlNotes.md#3115-underline-u-u)
         * [3.1.16 Emphasis](https://github.com/airpick/studyNotes/blob/feat/appliedVisualDesign/Code/Web/htmlNotes.md#3116-emphasis-em-em)
         * [3.1.17 Strikethrough](https://github.com/airpick/studyNotes/blob/feat/appliedVisualDesign/Code/Web/htmlNotes.md#3117-strikethrough-s-s)
+        * [3.1.18 Horizontal Line](https://github.com/airpick/studyNotes/blob/feat/appliedVisualDesign/Code/Web/htmlNotes.md#3118-horizontal-line-hr)
     * [3.2 Forms and Interactive Elements](https://github.com/airpick/studyNotes/blob/feat/appliedVisualDesign/Code/Web/htmlNotes.md#32-forms-and-interactive-elements)
         * [3.2.1 Form](https://github.com/airpick/studyNotes/blob/feat/appliedVisualDesign/Code/Web/htmlNotes.md#321-form-form-form)
         * [3.2.2 Input](https://github.com/airpick/studyNotes/blob/feat/appliedVisualDesign/Code/Web/htmlNotes.md#322-input-input)
@@ -150,6 +151,9 @@ This displays text as italicized, as the browser applies the CSS of `font-style:
 
 #### 3.1.17 Strikethrough `<s>` `</s>`
 With the `<s>` tag, the browser applies the CSS of `text-decoration: line-through;` to the element.
+
+#### 3.1.18 Horizontal Line `<hr>`
+Creates a horizontal line across the width of its containing element.
 
 ### 3.2 Forms and Interactive Elements
 #### 3.2.1 Form `<form>` `</form>`
