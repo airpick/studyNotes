@@ -339,6 +339,26 @@ It's commonly used with the width property to specify how much horizontal space 
 
 ex: `h2 {float:right;}`
 
+### 5.14 Background `background`
+#### 5.14.1 Background Color `background-color`
+The `background-color` property specifies the background color of an element.
+
+ex: `body {background-color: lightblue;}`
+
+#### 5.14.2 Background Image `background-image`
+The `background-image` property specifies an image to use as the background of an element.
+By default, the image is repeated so it covers the entire element.
+
+ex: `body {background-image: url("kitty.gif");}`
+
+#### 5.14.3 Linear Gradient `linear-gradient()`
+CSS provides the ability to use color transitions, otherwise known as gradients, on elements.
+
+ex: `background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);`
+
+The first argument specifies the direction from which color transition starts - it can be stated as a degree, where 90deg makes a vertical gradient and 45deg is angled like a backslash. 
+The following arguments specify the order of colors used in the gradient.
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
