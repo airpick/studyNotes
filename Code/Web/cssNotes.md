@@ -54,6 +54,7 @@ It can have value in overriding styles applied from other, difficult to locate s
 ## 4 Selector Types
 ### 4.1 HTML Elements
 As the example in `2 Formatting` highlights, a *selector* can point to HTML elements directly. 
+ex: `h1 {color: red;}`
 
 ### 4.2 Class
 If the *selector* begins with a `.`, this indicates that only elements which contain a corresponding `class` attribute will be impacted. 
@@ -119,7 +120,7 @@ Using media queries are a popular technique for delivering a tailored style shee
 
 ## 5 Properties
 ### 5.1 Colors `color`
-Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+Colors are specified using predefined color names, or `RGB`, `HEX`, `HSL`, `RGBA`, `HSLA` values.
 
 * `color` defines text color
 * `background-color` defines background color
@@ -255,6 +256,19 @@ Some `text-decoration-line` options include:
 * `line-through`
 
 ex: `h1 {text-decoration: underline overline dotted red;}`
+
+### 5.8 Box
+#### 5.8.1 Box Shadow `box-shadow`
+The `box-shadow` property applies one or more shadows to an element.
+The box-shadow property takes values for
+
+* `offset-x`: How far to push the shadow horizontally from the element.
+* `offset-y`: How far to push the shadow vertically from the element.
+* `blur-radius`: Optional. The higher the number, the more blurred the shadow will be.
+* `spread-radius`: Optional. A positive value increases the size of the shadow; a negative value decreases the size of the shadow.
+* `color`: The default value is the text color.
+
+ex: `box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);`
 
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
