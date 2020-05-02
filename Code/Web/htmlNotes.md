@@ -18,7 +18,8 @@
         * [3.1.12 Lists](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3112-lists)
         * [3.1.13 Div](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3113-div-div-div)
         * [3.1.14 Strong](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3114-strong)
-        * [3.1.15 Underline](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3114-underline)
+        * [3.1.15 Underline](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3115-underline)
+        * [3.1.16 Emphasis](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3116-emphasis)
     * [3.2 Forms and Interactive Elements](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#32-forms-and-interactive-elements)
         * [3.2.1 Form](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#321-form-form-form)
         * [3.2.2 Input](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#322-input-input)
@@ -143,6 +144,9 @@ Technically speaking, the browser applies the CSS style `font-weight: bold` to t
 #### 3.1.15 Underline `<u>` `</u>`
 With the `<u>` element, the browser applies the CSS of `text-decoration: underline;` to the element.
 This causes the text to be underlined.
+
+#### 3.1.16 Emphasis `<em>` `</em>`
+This displays text as italicized, as the browser applies the CSS of `font-style: italic;` to the element.
 
 ### 3.2 Forms and Interactive Elements
 #### 3.2.1 Form `<form>` `</form>`
