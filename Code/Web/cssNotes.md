@@ -151,6 +151,14 @@ Some available options are:
 * `bolder`
 * `lighter`
 
+#### 5.2.4 Font Style `font-style`
+The font-style property is mostly used to specify italic text.
+This property has three values:
+
+* `normal`: The text is shown normally
+* `italic`: The text is shown in italics
+* `oblique`: The text is "leaning" (oblique is very similar to italic, but less supported)
+
 ### 5.3 Sizing
 #### 5.3.1 Width `width`
 Controls the width of an object. 
