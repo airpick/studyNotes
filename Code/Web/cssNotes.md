@@ -388,6 +388,20 @@ Same as RGB, but with an added `Alpha` value which determines a level of opacity
 Unlike the RGB values, A is measured from 0 (fully transparent) to 1 (fully opaque).
 ex: `rgba(255, 0, 255, 0.5)`
 
+### 8.5 HSL
+`hsl()` is a means of directly declaring the Hue, Saturation, and Lightness.
+
+1. Hue
+    * If you picture a spectrum of colors starting with red on the left, moving through green in the middle, and blue on right, the hue is where a color fits along this line.
+    * Hue uses a color wheel concept instead of the spectrum, where the angle of the color on the circle is given as a value between 0 and 360.
+2. Saturation
+    * The amount of gray in a color.
+    * A fully saturated color has no gray in it, and a minimally saturated color is almost completely gray.
+    * Saturation is given as a percentage, with 100% being fully saturated.
+3. Lightness
+    * The amount of white or black in a color.
+    * A percentage is given ranging from 0% (black) to 100% (white), where 50% is the normal color.
+
 ## 9 Increasing Browser Compatibility
 When using some things, such as variables, certain browsers will be unable to support this layout. 
 In order to provide better back-ups for compatibility, best practice dictates declaring the back-ups in a supported format *before* those which may have compatibility issues.
