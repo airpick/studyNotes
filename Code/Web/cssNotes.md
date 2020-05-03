@@ -376,6 +376,12 @@ When used with pseudo-classes such as `:hover` that specify a certain state of a
 
 **Important Note:** Applying a transform to a div element will also affect any child elements contained in the div.
 
+#### 5.15.1 Scale `scale()`
+This function adjusts the size of the element the transform is applied to.
+
+#### 5.15.2 Skew `skew(x,y)` `skewX()` `skewY()`
+Adjusts the object along the x and/or y axis.
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
