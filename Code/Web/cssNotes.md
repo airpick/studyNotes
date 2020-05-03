@@ -360,7 +360,11 @@ The first argument specifies the direction from which color transition starts - 
 The following arguments specify the order of colors used in the gradient.
 
 #### 5.14.4 Repeating Linear Gradient `repeating-linear-gradient()`
-The `repeating-linear-gradient()` function is very similar to `linear-gradient()` with the major difference that it repeats the specified gradient pattern. 
+The `repeating-linear-gradient()` function is very similar to `linear-gradient()` with the major difference that it repeats the specified gradient pattern.
+
+#### 5.14.5 URL `url()`
+The Background property also supports the URL function, which allows an image to be set.
+ex: `body {background: url(https://myBackgroundImage.com/image)}`
 
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
