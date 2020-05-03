@@ -372,6 +372,10 @@ This property allows you to rotate, scale, move, skew, etc., elements.
 
 ex: `h5 {transform: scale(2);}` This will double the size of all `h5` elements
 
+When used with pseudo-classes such as `:hover` that specify a certain state of an element, the `transform` property can easily add interactivity to your elements.
+
+**Important Note:** Applying a transform to a div element will also affect any child elements contained in the div.
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
