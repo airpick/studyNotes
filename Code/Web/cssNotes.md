@@ -359,6 +359,9 @@ ex: `background: linear-gradient(gradient_direction, color 1, color 2, color 3, 
 The first argument specifies the direction from which color transition starts - it can be stated as a degree, where 90deg makes a vertical gradient and 45deg is angled like a backslash. 
 The following arguments specify the order of colors used in the gradient.
 
+#### 5.14.4 Repeating Linear Gradient `repeating-linear-gradient()`
+The `repeating-linear-gradient()` function is very similar to `linear-gradient()` with the major difference that it repeats the specified gradient pattern. 
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
