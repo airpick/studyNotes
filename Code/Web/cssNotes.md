@@ -366,6 +366,12 @@ The `repeating-linear-gradient()` function is very similar to `linear-gradient()
 The Background property also supports the URL function, which allows an image to be set.
 ex: `body {background: url(https://myBackgroundImage.com/image)}`
 
+### 5.15 Transform `transform`
+The `transform` property applies a 2D or 3D transformation to an element. 
+This property allows you to rotate, scale, move, skew, etc., elements.
+
+ex: `h5 {transform: scale(2);}` This will double the size of all `h5` elements
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
