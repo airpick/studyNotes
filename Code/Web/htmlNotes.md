@@ -155,6 +155,15 @@ With the `<s>` tag, the browser applies the CSS of `text-decoration: line-throug
 #### 3.1.18 Horizontal Line `<hr>`
 Creates a horizontal line across the width of its containing element.
 
+#### 3.1.19 Section `<section>` `</section>`
+Used to group thematically related content. 
+Otherwise identical to a `<div>`, but the content within has some sort of relational value.
+
+#### 3.1.20 Article `<article>` `</article>`
+Groups independent, self-contained content.
+If the contents could appear simply in an RSS feed, then this is the correct element to use. 
+Otherwise, a `<section>`, `<div>`, or other dividing element would be more appropriate. 
+
 ### 3.2 Forms and Interactive Elements
 #### 3.2.1 Form `<form>` `</form>`
 Creates an HTML form for user input.
