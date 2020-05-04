@@ -428,6 +428,7 @@ ex: `animation-fill-mode: forwards;` This will cause the animation to retain its
 
 #### 5.16.4 Animation Iteration Count `animation-iteration-count`
 This property allows you to control how many times you would like to loop through the animation.
+To make an animation occur infinitely, use `infinite`.
 
 ex: `animation-iteration-count: 3;` This will perform the same animation 3 times
 
