@@ -109,6 +109,12 @@ By creating your variables in `:root`, they will be available globally and can b
 Changes the hover state behavior (when you hover a mouse over an object) for the element assigned.
 ex: `a:hover {color: red;}` This will change the hover state for all anchor `<a>` elements.
 
+#### 4.6.3 `::before` and `::after`
+These psuedo-class elements are used to add something before or after a selected element.
+
+For the `::before` and `::after` pseudo-elements to function properly, they must have a defined `content` property. 
+This property is usually used to add things like a photo or text to the selected element.
+
 ### 4.7 Media Queries
 The `@media` selector looks at the capability of the device and allows different styles to be applied based on the capabilities available.
 ex: `@media screen and (min-width: 480px) {body {background-color: lightgreen;}}`
@@ -121,6 +127,29 @@ Media queries can be used to check many things, such as:
 * resolution
 
 Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones.
+
+### 4.8 Keyframes
+`@keyframes` is how to specify exactly what happens within an animation over its duration. 
+This is done by giving CSS properties for specific "frames" during the animation, with percentages ranging from 0% to 100%.
+
+This should be used in conjunction with animation properties.
+
+ex:
+```
+#anim {
+  animation-name: colorful;
+  animation-duration: 3s;
+}
+
+@keyframes colorful {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+```
 
 ## 5 Properties
 ### 5.1 Colors `color`
