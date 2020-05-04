@@ -421,6 +421,11 @@ The `@keyframes` selector must then point to the name specified in order to appl
 #### 5.16.2 Animation Duration `animation-duration`
 `animation-duration` sets the length of time for the animation.
 
+#### 5.16.3 Animation Fill Mode `animation-fill-mode`
+The `animation-fill-mode` specifies the style applied to an element when the animation has finished.
+
+ex: `animation-fill-mode: forwards;` This will cause the animation to retain its final value once its duration is complete
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
