@@ -73,6 +73,9 @@ By default, even if not declared all space within an HTML document not otherwise
 #### 3.1.5 Header `<header>` `</header>`
 Used as a container for introductory content or a set of navigation links.
 
+The `<header>` is meant for use in the `<body>` tag of your HTML document. 
+This is different than the `<head>` element, which contains the page's title, meta information, etc.
+
 #### 3.1.6 Main `<main>` `</main>`
 Used as a container for the main content of a webpage.
 
