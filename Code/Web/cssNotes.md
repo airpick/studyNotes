@@ -54,6 +54,7 @@ It can have value in overriding styles applied from other, difficult to locate s
 ## 4 Selector Types
 ### 4.1 HTML Elements
 As the example in `2 Formatting` highlights, a *selector* can point to HTML elements directly. 
+ex: `h1 {color: red;}`
 
 ### 4.2 Class
 If the *selector* begins with a `.`, this indicates that only elements which contain a corresponding `class` attribute will be impacted. 
@@ -104,6 +105,16 @@ To make use of inheritance, CSS variables are often defined in the `:root` psued
 `:root` is a pseudo-class selector that matches the root element of the document, usually the `html` element. 
 By creating your variables in `:root`, they will be available globally and can be accessed from any other selector in the style sheet.
 
+#### 4.6.2 `:hover`
+Changes the hover state behavior (when you hover a mouse over an object) for the element assigned.
+ex: `a:hover {color: red;}` This will change the hover state for all anchor `<a>` elements.
+
+#### 4.6.3 `::before` and `::after`
+These psuedo-class elements are used to add something before or after a selected element.
+
+For the `::before` and `::after` pseudo-elements to function properly, they must have a defined `content` property. 
+This property is usually used to add things like a photo or text to the selected element.
+
 ### 4.7 Media Queries
 The `@media` selector looks at the capability of the device and allows different styles to be applied based on the capabilities available.
 ex: `@media screen and (min-width: 480px) {body {background-color: lightgreen;}}`
@@ -117,9 +128,32 @@ Media queries can be used to check many things, such as:
 
 Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones.
 
+### 4.8 Keyframes
+`@keyframes` is how to specify exactly what happens within an animation over its duration. 
+This is done by giving CSS properties for specific "frames" during the animation, with percentages ranging from 0% to 100%.
+
+This should be used in conjunction with animation properties.
+
+ex:
+```
+#anim {
+  animation-name: colorful;
+  animation-duration: 3s;
+}
+
+@keyframes colorful {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+```
+
 ## 5 Properties
 ### 5.1 Colors `color`
-Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+Colors are specified using predefined color names, or `RGB`, `HEX`, `HSL`, `RGBA`, `HSLA` values.
 
 * `color` defines text color
 * `background-color` defines background color
@@ -142,10 +176,31 @@ ex: `font-family: "Open Sans"`
 If the user specifies more than one font type for a value in a single property declaration, the second (and any after) will be fallback font types.
 ex: `font-family: monospace, sans-serif;`
 
+#### 5.2.3 Font Weight `font-weight`
+The `font-weight` property sets how thick or thin characters in text should be displayed.
+Some available options are:
+
+* `normal`
+* `bold`
+* `bolder`
+* `lighter`
+
+#### 5.2.4 Font Style `font-style`
+The font-style property is mostly used to specify italic text.
+This property has three values:
+
+* `normal`: The text is shown normally
+* `italic`: The text is shown in italics
+* `oblique`: The text is "leaning" (oblique is very similar to italic, but less supported)
+
 ### 5.3 Sizing
 #### 5.3.1 Width `width`
 Controls the width of an object. 
 ex: `width: 500px;`
+
+#### 5.3.2 Height `height`
+Controls the height of an object.
+ex: `height: 200px;`
 
 ### 5.4 Borders
 #### 5.4.1 Border Color `border-color`
@@ -207,11 +262,187 @@ CSS allows you to control the margin of all four individual sides of an element 
 * `margin-bottom`
 * `margin-left`
 
+Additionally, you can center an element using the `auto` value for this property.
+ex: `div {margin: auto;}`
+
 #### 5.6.1 Clockwise Notation
 Instead of specifying an element's top, right, bottom, and left properties individually, you can specify them all in one line.
 ex: `margin: 10px 20px 10px 20px;`
 
 These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.
+
+### 5.7 Text
+#### 5.7.1 Text Align `text-align`
+Controls alignment of the text relative to the page. 
+Available alignment types are:
+
+* `justify`: causes all lines of text except the last line to meet the left and right edges of the line box
+* `left`: selected by default - left-aligns the text
+* `right`: right-aligns the text
+* `center`: centers the text
+
+#### 5.7.2 Text Decoration `text-decoration`
+The text-decoration property specifies the decoration added to text, such as an underline.
+In addition, there are sub-properties which allow the color and style of the decoration as well if such granularity is needed.
+
+Some `text-decoration-line` options include:
+
+* `underline`
+* `overline`
+* `line-through`
+
+ex: `h1 {text-decoration: underline overline dotted red;}`
+
+#### 5.7.3 Text Transform `text-transform`
+The `text-transform` property in CSS is used to change the appearance of text. 
+It's a convenient way to make sure text on a webpage appears consistently, without having to change the text content of the actual HTML elements.
+
+The following table shows how the different `text-transform` values change the example text "Transform me".
+
+| Value | Result |
+| ---- | ---- |
+| lowercase | "transform me" |
+| uppercase | "TRANSFORM ME" |
+| capitalize | "Transform Me" |
+| initial | Use the default value |
+| inherit | Use the text-transform value from the parent element |
+| none | Default - Use the original text |
+
+### 5.8 Box
+#### 5.8.1 Box Shadow `box-shadow`
+The `box-shadow` property applies one or more shadows to an element.
+The box-shadow property takes values for
+
+* `offset-x`: How far to push the shadow horizontally from the element.
+* `offset-y`: How far to push the shadow vertically from the element.
+* `blur-radius`: Optional. The higher the number, the more blurred the shadow will be.
+* `spread-radius`: Optional. A positive value increases the size of the shadow; a negative value decreases the size of the shadow.
+* `color`: The default value is the text color.
+
+ex: `box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);`
+
+### 5.9 Opacity `opacity`
+The opacity property in CSS is used to adjust the opacity, or conversely, the transparency for an item.
+
+* A value of 1 is opaque, which isn't transparent at all
+* A value of 0.5 is half see-through
+* A value of 0 is completely transparent
+
+### 5.10 Line
+#### 5.10.1 Line Height `line-height`
+Determines the distance between each line for text which is displayed in multiple lines.
+ex: `p {line-height: 25px;}`
+
+### 5.11 Position `position`
+Sets the position of an element.
+See Section 10: CSS Box Model for more information on how each element has layout within a page.
+
+When elements are positioned to overlap (i.e. using `position: absolute | relative | fixed | sticky`), the element coming later in the HTML markup will, by default, appear on the top of the other elements.
+To change this, see the 5.12 Overlapping & the Z-Index section.
+
+#### 5.11.1 Relative `relative`
+When the `position` of an element is set to `relative`, it allows you to specify how CSS should move it relative to its current position in the normal flow of the page. 
+
+It pairs with the CSS offset properties of `left` or `right`, and `top` or `bottom`.
+These say how many pixels, percentages, or ems to move the item ***away*** from where it is normally positioned.
+
+ex: `p {position: relative; bottom: 10px;}`
+
+#### 5.11.2 Absolute `absolute`
+Locks the element in place relative to its parent container.
+Unlike the `relative` position, this removes the element from the normal flow of the document, so surrounding items ignore it. 
+
+One nuance with `absolute` positioning is that it will be locked relative to its closest positioned ancestor. 
+If you forget to add a position rule to the parent item, (this is typically done using `position: relative;`), the browser will keep looking up the chain and ultimately default to the `body` tag.
+
+#### 5.11.3 Fixed `fixed`
+Similar to `absolute` positioning, it's used with the CSS offset properties and also removes the element from the normal flow of the document.
+One key difference between the `fixed` and `absolute` positions is that an element with a fixed position won't move when the user scrolls.
+
+### 5.12 Overlapping & the Z-Index `z-index`
+The `z-index` property can specify the order of how elements are stacked on top of one another. It must be an integer (i.e. a whole number and not a decimal), and higher values for the `z-index` property of an element move it higher in the stack than those with lower values.
+
+### 5.13 Float `float`
+Floating elements are removed from the normal flow of a document and pushed to either the `left` or `right` of their containing parent element. 
+It's commonly used with the width property to specify how much horizontal space the floated element requires.
+
+ex: `h2 {float:right;}`
+
+### 5.14 Background `background`
+#### 5.14.1 Background Color `background-color`
+The `background-color` property specifies the background color of an element.
+
+ex: `body {background-color: lightblue;}`
+
+#### 5.14.2 Background Image `background-image`
+The `background-image` property specifies an image to use as the background of an element.
+By default, the image is repeated so it covers the entire element.
+
+ex: `body {background-image: url("kitty.gif");}`
+
+#### 5.14.3 Linear Gradient `linear-gradient()`
+CSS provides the ability to use color transitions, otherwise known as gradients, on elements.
+
+ex: `background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);`
+
+The first argument specifies the direction from which color transition starts - it can be stated as a degree, where 90deg makes a vertical gradient and 45deg is angled like a backslash. 
+The following arguments specify the order of colors used in the gradient.
+
+#### 5.14.4 Repeating Linear Gradient `repeating-linear-gradient()`
+The `repeating-linear-gradient()` function is very similar to `linear-gradient()` with the major difference that it repeats the specified gradient pattern.
+
+#### 5.14.5 URL `url()`
+The Background property also supports the URL function, which allows an image to be set.
+ex: `body {background: url(https://myBackgroundImage.com/image)}`
+
+### 5.15 Transform `transform`
+The `transform` property applies a 2D or 3D transformation to an element. 
+This property allows you to rotate, scale, move, skew, etc., elements.
+
+ex: `h5 {transform: scale(2);}` This will double the size of all `h5` elements
+
+When used with pseudo-classes such as `:hover` that specify a certain state of an element, the `transform` property can easily add interactivity to your elements.
+
+**Important Note:** Applying a transform to a div element will also affect any child elements contained in the div.
+
+#### 5.15.1 Scale `scale()`
+This function adjusts the size of the element the transform is applied to.
+
+#### 5.15.2 Skew `skew(x,y)` `skewX()` `skewY()`
+Adjusts the object along the x and/or y axis.
+
+### 5.16 Animation
+A series of animation properties, when used in conjunction with the `@keyframes` selector, allows a user to animate the properties of their webpage via CSS.
+
+#### 5.16.1 Animation Name `animation-name`
+Sets the name for the animation.
+The `@keyframes` selector must then point to the name specified in order to apply the animation.
+
+#### 5.16.2 Animation Duration `animation-duration`
+`animation-duration` sets the length of time for the animation.
+
+#### 5.16.3 Animation Fill Mode `animation-fill-mode`
+The `animation-fill-mode` specifies the style applied to an element when the animation has finished.
+
+ex: `animation-fill-mode: forwards;` This will cause the animation to retain its final value once its duration is complete
+
+#### 5.16.4 Animation Iteration Count `animation-iteration-count`
+This property allows you to control how many times you would like to loop through the animation.
+To make an animation occur infinitely, use `infinite`.
+
+ex: `animation-iteration-count: 3;` This will perform the same animation 3 times
+
+#### 5.16.5 Animation Timing Function `animation-timing-function`
+The `animation-timing-function` property controls how quickly an animated element changes over the duration of the animation.
+
+If the animation is a car moving from point A to point B in a given time (your `animation-duration`), the `animation-timing-function` says how the car accelerates and decelerates over the course of the drive.
+
+Sample values:
+
+* `ease`: Starts slow, speeds up in the middle, and then slows down again in the end
+* `ease-out`: Quick in the beginning then slows down
+* `ease-in`: Slow in the beginning, then speeds up at the end
+* `linear`: Applies a constant animation speed throughout
 
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
@@ -254,10 +485,35 @@ For another example, orange is pure red, mixed with some green, and no blue. In 
 Using shorthand, red's hex code `#FF0000` can be shortened to `#F00`. This shortened form gives one digit for red, one digit for green, and one digit for blue.
 
 ### 8.3 RGB
+Colors from 0 to 255 for red, green, and blue.
 ex: `rgb(0, 0, 0)`, `rgb(255, 255, 255)`
+
+### 8.4 RGBA
+Same as RGB, but with an added `Alpha` value which determines a level of opacity. 
+Unlike the RGB values, A is measured from 0 (fully transparent) to 1 (fully opaque).
+ex: `rgba(255, 0, 255, 0.5)`
+
+### 8.5 HSL
+`hsl()` is a means of directly declaring the Hue, Saturation, and Lightness.
+
+1. Hue
+    * If you picture a spectrum of colors starting with red on the left, moving through green in the middle, and blue on right, the hue is where a color fits along this line.
+    * Hue uses a color wheel concept instead of the spectrum, where the angle of the color on the circle is given as a value between 0 and 360.
+2. Saturation
+    * The amount of gray in a color.
+    * A fully saturated color has no gray in it, and a minimally saturated color is almost completely gray.
+    * Saturation is given as a percentage, with 100% being fully saturated.
+3. Lightness
+    * The amount of white or black in a color.
+    * A percentage is given ranging from 0% (black) to 100% (white), where 50% is the normal color.
 
 ## 9 Increasing Browser Compatibility
 When using some things, such as variables, certain browsers will be unable to support this layout. 
 In order to provide better back-ups for compatibility, best practice dictates declaring the back-ups in a supported format *before* those which may have compatibility issues.
 
 This allows the value to be overwritten in the cascade when the initially desired feature is supported.
+
+## 10 CSS Box Model
+CSS treats each HTML element as its own box, which is usually referred to as the *CSS Box Model*. Block-level items automatically start on a new line (think headings, paragraphs, and divs) while inline items sit within surrounding content (like images or spans). The default layout of elements in this way is called the normal flow of a document. 
+
+CSS also offers the `position` property to override the default layout settings of an element.
