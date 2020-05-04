@@ -165,7 +165,14 @@ Otherwise identical to a `<div>`, but the content within has some sort of relati
 #### 3.1.20 Article `<article>` `</article>`
 Groups independent, self-contained content.
 If the contents could appear simply in an RSS feed, then this is the correct element to use. 
-Otherwise, a `<section>`, `<div>`, or other dividing element would be more appropriate. 
+Otherwise, a `<section>`, `<div>`, or other dividing element would be more appropriate.
+
+#### 3.1.21 Nav `<nav>` `</nav>`
+The `<nav>` element has the embedded landmark feature for easy screen reader navigation.
+This tag is meant to wrap around the main navigation links in your page.
+
+If there are repeated site links at the bottom of the page, it isn't necessary to markup those with a nav tag as well.
+Using a `<footer>` is sufficient for these types of situations.
 
 ### 3.2 Forms and Interactive Elements
 #### 3.2.1 Form `<form>` `</form>`
