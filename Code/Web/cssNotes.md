@@ -432,6 +432,18 @@ To make an animation occur infinitely, use `infinite`.
 
 ex: `animation-iteration-count: 3;` This will perform the same animation 3 times
 
+#### 5.16.5 Animation Timing Function `animation-timing-function`
+The `animation-timing-function` property controls how quickly an animated element changes over the duration of the animation.
+
+If the animation is a car moving from point A to point B in a given time (your `animation-duration`), the `animation-timing-function` says how the car accelerates and decelerates over the course of the drive.
+
+Sample values:
+
+* `ease`: Starts slow, speeds up in the middle, and then slows down again in the end
+* `ease-out`: Quick in the beginning then slows down
+* `ease-in`: Slow in the beginning, then speeds up at the end
+* `linear`: Applies a constant animation speed throughout
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
