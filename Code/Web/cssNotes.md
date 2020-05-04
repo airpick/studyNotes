@@ -426,6 +426,11 @@ The `animation-fill-mode` specifies the style applied to an element when the ani
 
 ex: `animation-fill-mode: forwards;` This will cause the animation to retain its final value once its duration is complete
 
+#### 5.16.4 Animation Iteration Count `animation-iteration-count`
+This property allows you to control how many times you would like to loop through the animation.
+
+ex: `animation-iteration-count: 3;` This will perform the same animation 3 times
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
