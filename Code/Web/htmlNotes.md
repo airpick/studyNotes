@@ -1,7 +1,7 @@
 # HTML Notes
 ## Table of Contents
 1. [Overview](https://github.com/airpick/studyNotes/blob/feat/appliedAccessibility/Code/Web/htmlNotes.md#1-overview)
-2. [DOCTYPE Declaration](https://github.com/airpick/studyNotes/blob/feat/appliedAccessibility/Code/Web/htmlNotes.md#2-doctype-declaration-doctype-)
+2. [DOCTYPE Declaration](user-content-2-doctype-declaration-doctype-)
 3. [Elements](https://github.com/airpick/studyNotes/blob/feat/appliedAccessibility/Code/Web/htmlNotes.md#3-elements)
     * [3.1 Basic Elements](https://github.com/airpick/studyNotes/blob/feat/appliedAccessibility/Code/Web/htmlNotes.md#31-basic-elements)
         * [3.1.1 Comment](https://github.com/airpick/studyNotes/blob/feat/appliedAccessibility/Code/Web/htmlNotes.md#311-comment------)
