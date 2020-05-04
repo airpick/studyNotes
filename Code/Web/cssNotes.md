@@ -411,6 +411,16 @@ This function adjusts the size of the element the transform is applied to.
 #### 5.15.2 Skew `skew(x,y)` `skewX()` `skewY()`
 Adjusts the object along the x and/or y axis.
 
+### 5.16 Animation
+A series of animation properties, when used in conjunction with the `@keyframes` selector, allows a user to animate the properties of their webpage via CSS.
+
+#### 5.16.1 Animation Name `animation-name`
+Sets the name for the animation.
+The `@keyframes` selector must then point to the name specified in order to apply the animation.
+
+#### 5.16.2 Animation Duration `animation-duration`
+`animation-duration` sets the length of time for the animation.
+
 ## 6 Units of Measurement
 ### 6.1 Absolute Units
 Absolute units tie to physical units of length, such as `in` or `mm`.
