@@ -207,6 +207,25 @@ The `<source>` tag is used to specify multiple media resources for media element
 
 The `<source>` tag allows you to specify alternative video/audio/image files which the browser may choose from, based on its media type, codec support, or media query.
 
+#### 3.1.24 Figure `<figure>` `</figure>`
+The `<figure>` tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+
+While the content of the `<figure>` element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.
+
+##### 3.1.24.1 FigCaption `<figcaption>` `</figcaption>`
+The `<figcaption>` tag defines a caption for a `<figure>` element.
+The `<figcaption>` element can be placed as the first or last child of the `<figure>` element.
+
+```
+<figure>
+  <img src="roundhouseDestruction.jpeg" alt="Photo of Camper Cat executing a roundhouse kick">
+  <br>
+  <figcaption>
+    Master Camper Cat demonstrates proper form of a roundhouse kick.
+  </figcaption>
+</figure>
+```
+
 ### 3.2 Forms and Interactive Elements
 #### 3.2.1 Form `<form>` `</form>`
 Creates an HTML form for user input.
