@@ -227,6 +227,14 @@ The `<figcaption>` element can be placed as the first or last child of the `<fig
 </figure>
 ```
 
+#### 3.1.25 Time `<time>` `</time>`
+The `<time>` tag defines a human-readable date/time.
+
+This element can also be used to encode dates and times in a machine-readable way so that user agents can offer to add birthday reminders or scheduled events to the user's calendar, and search engines can produce smarter search results.
+
+##### 3.1.25.1 DateTime `datetime="YYYY-MM-DDThh:mm:ssTZD"`
+The datetime attribute represent the machine-readable date/time of the `<time>` element.
+
 ### 3.2 Forms and Interactive Elements
 #### 3.2.1 Form `<form>` `</form>`
 Creates an HTML form for user input.
