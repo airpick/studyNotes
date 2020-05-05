@@ -27,6 +27,7 @@
         * [3.1.21 Nav](#user-content-3121-nav-nav-nav)
         * [3.1.22 Audio](#user-content-3122-audio-audio-audio)
         * [3.1.23 Source](#user-content-3123-source-source)
+        * [3.1.24 Figure](#user-content-3124-figure-figure-figure)
     * [3.2 Forms and Interactive Elements](#user-content-32-forms-and-interactive-elements)
         * [3.2.1 Form](#user-content-321-form-form-form)
         * [3.2.2 Input](#user-content-322-input-input)
