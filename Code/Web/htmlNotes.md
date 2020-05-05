@@ -177,6 +177,34 @@ This tag is meant to wrap around the main navigation links in your page.
 If there are repeated site links at the bottom of the page, it isn't necessary to markup those with a nav tag as well.
 Using a `<footer>` is sufficient for these types of situations.
 
+#### 3.1.22 Audio `<audio>` `</audio>`
+The `<audio>` element gives semantic meaning when it wraps sound or audio stream content in your markup. 
+
+Audio content also needs a text alternative to be accessible to people who are deaf or hard of hearing. 
+This can be done with nearby text on the page or a link to a transcript.
+
+The `controls` attribute adds audio controls, like play, pause, and volume.
+The `<source>` element allows you to specify alternative audio files which the browser may choose from. 
+
+The browser will use the first recognized format.
+The text between the `<audio>` and `</audio>` tags will only be displayed in browsers that do not support the `<audio>` element.
+
+##### 3.1.22.1 Controls `controls`
+The `controls` attribute is a boolean attribute.
+When present, it specifies that audio controls should be displayed.
+
+Audio controls should include:
+
+* Play
+* Pause
+* Seeking
+* Volume
+
+#### 3.1.23 Source `<source>`
+The `<source>` tag is used to specify multiple media resources for media elements, such as `<video>`, `<audio>`, and `<picture>`.
+
+The `<source>` tag allows you to specify alternative video/audio/image files which the browser may choose from, based on its media type, codec support, or media query.
+
 ### 3.2 Forms and Interactive Elements
 #### 3.2.1 Form `<form>` `</form>`
 Creates an HTML form for user input.
