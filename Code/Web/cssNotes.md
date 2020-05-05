@@ -526,3 +526,24 @@ This allows the value to be overwritten in the cascade when the initially desire
 CSS treats each HTML element as its own box, which is usually referred to as the *CSS Box Model*. Block-level items automatically start on a new line (think headings, paragraphs, and divs) while inline items sit within surrounding content (like images or spans). The default layout of elements in this way is called the normal flow of a document. 
 
 CSS also offers the `position` property to override the default layout settings of an element.
+
+## 11 Accessibility
+In order to assist with those who are unable to view a website, a variety of elements are configured to respond a specific way for Screen Readers to review and output content appropriately, increasing the website's accessibility. 
+
+The following is an example of how CSS can be configured for Screen Reader only content, which further aids in this endeavor.
+
+```
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+```
+
+**Note:** The following CSS approaches will NOT do the same thing:
+
+* `display: none;` or `visibility: hidden;` hides content for everyone, including screen reader users
+* Zero values for pixel sizes, such as `width: 0px; height: 0px;` removes that element from the flow of your document, meaning screen readers will ignore it
