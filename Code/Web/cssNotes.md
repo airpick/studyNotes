@@ -10,6 +10,7 @@
 8. [Color](#user-content-8-color)
 9. [Increasing Browser Compatibility](#user-content-9-increasing-browser-compatibility)
 10. [CSS Box Model](#user-content-10-css-box-model)
+11. [Accessibility](#user-content-11-accessibility)
 
 ## 1 Overview
 Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML.
@@ -528,6 +529,7 @@ CSS treats each HTML element as its own box, which is usually referred to as the
 CSS also offers the `position` property to override the default layout settings of an element.
 
 ## 11 Accessibility
+### 11.1 Screen Reader Only Content
 In order to assist with those who are unable to view a website, a variety of elements are configured to respond a specific way for Screen Readers to review and output content appropriately, increasing the website's accessibility. 
 
 The following is an example of how CSS can be configured for Screen Reader only content, which further aids in this endeavor.
@@ -547,3 +549,11 @@ The following is an example of how CSS can be configured for Screen Reader only 
 
 * `display: none;` or `visibility: hidden;` hides content for everyone, including screen reader users
 * Zero values for pixel sizes, such as `width: 0px; height: 0px;` removes that element from the flow of your document, meaning screen readers will ignore it
+
+### 11.2 Contrast
+Low contrast between the foreground and background colors can make text difficult to read. 
+Sufficient contrast improves the readability of your content, but what exactly does "sufficient" mean?
+
+The Web Content Accessibility Guidelines (WCAG) recommend at least a 4.5 to 1 contrast ratio for normal text. 
+he ratio is calculated by comparing the relative luminance values of two colors. 
+This ranges from 1:1 for the same color, or no contrast, to 21:1 for white against black, the strongest contrast. 
