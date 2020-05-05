@@ -348,6 +348,28 @@ The `for` attribute of the `<label>` tag should be equal to the `id` attribute o
 | for | element_id | Specifies which form element a label is bound to. |
 | form | form_id | Specifies which form the label belongs to. |
 
+#### 3.2.5 FieldSet `<fieldset>` `</fieldset>`
+The `<fieldset>` tag is used to group related elements in a form.
+It also draws a box around the related elements.
+
+##### 3.2.5.1 Legend `<legend>` `</legend>`
+The `<legend>` tag defines a caption for the `<fieldset>` element.
+
+ex: 
+```
+<form>
+  <fieldset>
+    <legend>Choose one of these three items:</legend>
+    <input id="one" type="radio" name="items" value="one">
+    <label for="one">Choice One</label><br>
+    <input id="two" type="radio" name="items" value="two">
+    <label for="two">Choice Two</label><br>
+    <input id="three" type="radio" name="items" value="three">
+    <label for="three">Choice Three</label>
+  </fieldset>
+</form>
+```
+
 ## 4 Other Important Features
 ### 4.1 Organizational Attributes
 #### 4.1.1 Class `class=""`
