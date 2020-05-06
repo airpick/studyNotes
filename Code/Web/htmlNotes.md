@@ -378,6 +378,10 @@ ex:
 </form>
 ```
 
+#### 3.2.6 AccessKey `accesskey=""`
+HTML offers the `accesskey` attribute to specify a shortcut key to activate or bring focus to an element.
+This attribute can be used with any element (although its best application is with interactive elements) and can make navigation more efficient for keyboard-only users.
+
 ## 4 Other Important Features
 ### 4.1 Organizational Attributes
 #### 4.1.1 Class `class=""`
