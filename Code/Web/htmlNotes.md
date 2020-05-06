@@ -385,6 +385,14 @@ ex:
 HTML offers the `accesskey` attribute to specify a shortcut key to activate or bring focus to an element.
 This attribute can be used with any element (although its best application is with interactive elements) and can make navigation more efficient for keyboard-only users.
 
+#### 3.2.7 TabIndex `tabindex=""`
+The `tabindex` attribute specifies the tab order of an element (when the "tab" button is used for navigating).
+It can be used on any HTML element, or, more accurately, it will validate on any HTML element. However, it is not necessarily useful for some elements.
+
+* **-1 and under:** A negative tabindex value (typically -1) indicates that an element is focusable, but is not reachable by the keyboard. This method is generally used to bring focus to content programmatically (like when a div used for a pop-up window is activated).
+* **0:** For an element that normally is not accessible via tabbing, adding this attribute enters the element into the same order as existing elements in the HTML source markup. 
+* **1 and above:** Assigns a priority to the element (with 1 being highest). Tabbing will focus on these before all normal elements in the HTML source markup.
+
 ## 4 Other Important Features
 ### 4.1 Organizational Attributes
 #### 4.1.1 Class `class=""`
