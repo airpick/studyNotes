@@ -393,6 +393,8 @@ It can be used on any HTML element, or, more accurately, it will validate on any
 * **0:** For an element that normally is not accessible via tabbing, adding this attribute enters the element into the same order as existing elements in the HTML source markup. 
 * **1 and above:** Assigns a priority to the element (with 1 being highest). Tabbing will focus on these before all normal elements in the HTML source markup.
 
+Side Note: Using `tabindex` also enables the CSS pseudo-class `:focus` to work on the element it is applied to.
+
 ## 4 Other Important Features
 ### 4.1 Organizational Attributes
 #### 4.1.1 Class `class=""`
