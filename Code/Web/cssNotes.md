@@ -557,3 +557,11 @@ Sufficient contrast improves the readability of your content, but what exactly d
 The Web Content Accessibility Guidelines (WCAG) recommend at least a 4.5 to 1 contrast ratio for normal text. 
 he ratio is calculated by comparing the relative luminance values of two colors. 
 This ranges from 1:1 for the same color, or no contrast, to 21:1 for white against black, the strongest contrast. 
+
+### 11.3 Color
+Color is a large part of visual design, but its use introduces two accessibility issues:
+
+1. Color alone should not be used as the only way to convey important information because screen reader users won't see it.
+2. Foreground and background colors need sufficient contrast so colorblind users can distinguish them.
+
+The WCAG-recommended contrast ratio of 4.5:1 applies for color use as well as gray-scale combinations.
