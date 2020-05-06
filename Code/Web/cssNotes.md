@@ -565,3 +565,11 @@ Color is a large part of visual design, but its use introduces two accessibility
 2. Foreground and background colors need sufficient contrast so colorblind users can distinguish them.
 
 The WCAG-recommended contrast ratio of 4.5:1 applies for color use as well as gray-scale combinations.
+
+### 11.4 Hyperlinks
+Screen Readers have the ability to only hear the links available on a page.
+
+Screen readers do this by reading the link text, or what's between the anchor (`<a>`) tags. 
+Having a list of "click here" or "read more" links isn't helpful. 
+
+Instead, webpages should use brief but descriptive text within the a tags to provide more meaning for these users.
