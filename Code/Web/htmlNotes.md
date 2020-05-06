@@ -36,6 +36,7 @@
         * [3.2.4 Label](#user-content-324-label-label-label)
         * [3.2.5 FieldSet](#user-content-325-fieldset-fieldset-fieldset)
         * [3.2.6 AccessKey](#user-content-326-accesskey-accesskey)
+        * [3.2.7 TabIndex](#user-content-327-tabindex-tabindex)
 4. [Other Important Features](#user-content-4-other-important-features)
     * [4.1 Organizational Attributes](#user-content-41-organizational-attributes)
         * [4.1.1 Class](#user-content-411-class-class)
