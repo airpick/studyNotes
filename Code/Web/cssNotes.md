@@ -11,6 +11,7 @@
 9. [Increasing Browser Compatibility](#user-content-9-increasing-browser-compatibility)
 10. [CSS Box Model](#user-content-10-css-box-model)
 11. [Accessibility](#user-content-11-accessibility)
+12. [Responsive Design](#user-content-12-responsive-design)
 
 ## 1 Overview
 Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML.
@@ -575,13 +576,13 @@ Having a list of "click here" or "read more" links isn't helpful.
 Instead, webpages should use brief but descriptive text within the a tags to provide more meaning for these users.
 
 ## 12 Responsive Design
-### Media Types
+### 12.1 Media Types
 When using the `@media` selector, the user can define how the webpage will display based on the current viewport size (size of the page displayed to the user).
 This value updates dynamically and is provided by the browser, so if the user resizes a page it will adjust accordingly.
 
 Webpages should always be developed with the most common user in mind, be it desktop-first, mobile-first, etc..
 
-#### `@media` Properties
+#### 12.1.1 `@media` Properties
 The following are some of the properties which can be leveraged via the `@media` selector: 
 
 * `min-height`
@@ -589,7 +590,7 @@ The following are some of the properties which can be leveraged via the `@media`
 * `min-width`
 * `max-width`
 
-### Images
+### 12.2 Images
 Images can also be set in a responsive manner using the following: 
 
 ```
@@ -601,7 +602,7 @@ Images can also be set in a responsive manner using the following:
 
 In the above declaration, the `max-width` of 100% will make sure the image is never wider than the container it is in and the `height` of auto will make the image keep its original aspect ratio.
 
-#### Image Quality
+#### 12.2.1 Image Quality
 Image quality can vary based not only on screen size, but on the amount of pixels available for an image.
 Pixel density is an aspect that vary and is usually referred to as Pixel Per Inch(PPI) or Dots Per Inch(DPI).
 
@@ -615,7 +616,7 @@ ex:
 <img src="coolPic500x500" alt="A most excellent picture">
 ```
 
-### Viewports
+### 12.3 Viewports
 Instead of using `em` or `px` to size text, you can use viewport units for responsive typography.
 Viewport units are relative to the viewport dimensions (width or height) of a device, and percentages are relative to the size of the parent container element.
 
