@@ -600,3 +600,17 @@ Images can also be set in a responsive manner using the following:
 ```
 
 In the above declaration, the `max-width` of 100% will make sure the image is never wider than the container it is in and the `height` of auto will make the image keep its original aspect ratio.
+
+#### Image Quality
+Image quality can vary based not only on screen size, but on the amount of pixels available for an image.
+Pixel density is an aspect that vary and is usually referred to as Pixel Per Inch(PPI) or Dots Per Inch(DPI).
+
+The simplest way to make your images properly appear on High-Resolution Displays, such as the MacBook Pro's "retina display", is to define their `width` and `height` values as only half of what the original file is.
+
+ex:
+```
+<style>
+  img {height: 250px; width: 250px;}
+</style>
+<img src="coolPic500x500" alt="A most excellent picture">
+```
