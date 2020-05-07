@@ -573,3 +573,57 @@ Screen readers do this by reading the link text, or what's between the anchor (`
 Having a list of "click here" or "read more" links isn't helpful. 
 
 Instead, webpages should use brief but descriptive text within the a tags to provide more meaning for these users.
+
+## 12 Responsive Design
+### Media Types
+When using the `@media` selector, the user can define how the webpage will display based on the current viewport size (size of the page displayed to the user).
+This value updates dynamically and is provided by the browser, so if the user resizes a page it will adjust accordingly.
+
+Webpages should always be developed with the most common user in mind, be it desktop-first, mobile-first, etc..
+
+#### `@media` Properties
+The following are some of the properties which can be leveraged via the `@media` selector: 
+
+* `min-height`
+* `max-height`
+* `min-width`
+* `max-width`
+
+### Images
+Images can also be set in a responsive manner using the following: 
+
+```
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+```
+
+In the above declaration, the `max-width` of 100% will make sure the image is never wider than the container it is in and the `height` of auto will make the image keep its original aspect ratio.
+
+#### Image Quality
+Image quality can vary based not only on screen size, but on the amount of pixels available for an image.
+Pixel density is an aspect that vary and is usually referred to as Pixel Per Inch(PPI) or Dots Per Inch(DPI).
+
+The simplest way to make your images properly appear on High-Resolution Displays, such as the MacBook Pro's "retina display", is to define their `width` and `height` values as only half of what the original file is.
+
+ex:
+```
+<style>
+  img {height: 250px; width: 250px;}
+</style>
+<img src="coolPic500x500" alt="A most excellent picture">
+```
+
+### Viewports
+Instead of using `em` or `px` to size text, you can use viewport units for responsive typography.
+Viewport units are relative to the viewport dimensions (width or height) of a device, and percentages are relative to the size of the parent container element.
+
+The four different viewport units are:
+
+* `vw` (viewport width): 10vw would be 10% of the viewport's width
+* `vh` (viewport height): 3vh would be 3% of the viewport's height
+* `vmin` (viewport minimum): 70vmin would be 70% of the viewport's smaller dimension (height or width)
+* `vmax` (viewport maximum): 100vmax would be 100% of the viewport's bigger dimension (height or width)
+
+ex: `body {width: 70vmin;}`
