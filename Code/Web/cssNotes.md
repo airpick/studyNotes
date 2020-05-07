@@ -573,3 +573,30 @@ Screen readers do this by reading the link text, or what's between the anchor (`
 Having a list of "click here" or "read more" links isn't helpful. 
 
 Instead, webpages should use brief but descriptive text within the a tags to provide more meaning for these users.
+
+## 12 Responsive Design
+### Media Types
+When using the `@media` selector, the user can define how the webpage will display based on the current viewport size (size of the page displayed to the user).
+This value updates dynamically and is provided by the browser, so if the user resizes a page it will adjust accordingly.
+
+Webpages should always be developed with the most common user in mind, be it desktop-first, mobile-first, etc..
+
+#### `@media` Properties
+The following are some of the properties which can be leveraged via the `@media` selector: 
+
+* `min-height`
+* `max-height`
+* `min-width`
+* `max-width`
+
+### Images
+Images can also be set in a responsive manner using the following: 
+
+```
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+```
+
+In the above declaration, the `max-width` of 100% will make sure the image is never wider than the container it is in and the `height` of auto will make the image keep its original aspect ratio.
