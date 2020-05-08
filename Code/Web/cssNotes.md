@@ -628,3 +628,22 @@ The four different viewport units are:
 * `vmax` (viewport maximum): 100vmax would be 100% of the viewport's bigger dimension (height or width)
 
 ex: `body {width: 70vmin;}`
+
+## 13 CSS Flexbox
+CSS3 introduced Flexible Boxes, or flexbox, to create page layouts for a dynamic UI.
+It is a layout mode that arranges elements in a predictable way for different screen sizes and browsers.
+
+### 13.1 Properties
+#### 13.1.1 `display:flex`
+Technically a value, but is required as a declaration in order to apply other flex properties to an object.
+
+#### 13.1.2 `flex-direction`
+Adding `display: flex` to an element turns it into a flex container.
+This makes it possible to align any children of that element into rows or columns.
+
+You do this by adding the `flex-direction` property to the parent item and setting it to one of the following the following values:
+
+* `row`
+* `column`
+* `row-reverse`
+* `column-reverse`
