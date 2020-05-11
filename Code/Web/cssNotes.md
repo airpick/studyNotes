@@ -12,6 +12,7 @@
 10. [CSS Box Model](#user-content-10-css-box-model)
 11. [Accessibility](#user-content-11-accessibility)
 12. [Responsive Design](#user-content-12-responsive-design)
+13. [Flexbox](#user-content-13-flexbox)
 
 ## 1 Overview
 Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML.
@@ -629,7 +630,7 @@ The four different viewport units are:
 
 ex: `body {width: 70vmin;}`
 
-## 13 CSS Flexbox
+## 13 Flexbox
 CSS3 introduced Flexible Boxes, or flexbox, to create page layouts for a dynamic UI.
 It is a layout mode that arranges elements in a predictable way for different screen sizes and browsers.
 
@@ -647,3 +648,35 @@ You do this by adding the `flex-direction` property to the parent item and setti
 * `column`
 * `row-reverse`
 * `column-reverse`
+
+#### 13.1.3 Justify Content `justify-content`
+Allows the user to define how a flexbox element will justify.
+[This diagram](https://www.w3.org/TR/css-flexbox-1/images/flex-direction-terms.svg) provides a visual representation of key terms used for this method of justification.
+
+* main: Depends on the `flex-direction` property. Rows use the x axis as their main (horizontal) and Columns use the y axis.
+* size: Total length or width of the full container.
+* start: Beginning of the full container.
+* end: End of the full container.
+* axis: Half the length of the size.
+
+##### 13.1.3.1 Flex Start `flex-start`
+Aligns items to the start of the flex container.
+For a row, this pushes the items to the left of the container. For a column, this pushes the items to the top of the container.
+
+This is the default alignment if no justify-content is specified.
+
+##### 13.1.3.2 Flex End `flex-end`
+Aligns items to the end of the flex container.
+For a row, this pushes the items to the right of the container. For a column, this pushes the items to the bottom of the container.
+
+##### 13.1.3.3 Space Between `space-between`
+Aligns items to the center of the main axis, with extra space placed between the items.
+The first and last items are pushed to the very edge of the flex container. 
+
+For example, in a row the first item is against the left side of the container, the last item is against the right side of the container, then the remaining space is distributed evenly among the other items.
+
+##### 13.1.3.4 Space Around `space-around`
+Similar to space-between but the first and last items are not locked to the edges of the container, the space is distributed around all the items with a half space on either end of the flex container.
+
+##### 13.1.3.5 Space Evenly `space-evenly`
+Distributes space evenly between the flex items with a full space at either end of the flex container.
