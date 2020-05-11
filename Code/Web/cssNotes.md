@@ -680,6 +680,3 @@ Similar to space-between but the first and last items are not locked to the edge
 
 ##### 13.1.3.5 Space Evenly `space-evenly`
 Distributes space evenly between the flex items with a full space at either end of the flex container.
-
-## 14 New Chapter
-I'm adding something new!!!
