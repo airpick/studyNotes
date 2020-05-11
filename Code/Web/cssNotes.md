@@ -740,3 +740,8 @@ The flex-shrink property takes numbers as values.
 The larger the number, the more it will shrink compared to the other items in the container.
 
 For example, if one item has a flex-shrink value of 1 and the other has a flex-shrink value of 3, the one with the value of 3 will shrink three times as much as the other.
+
+#### 13.1.7 Flex Grow `flex-grow`
+Conversely to `flex-shrink`, the `flex-grow` property controls the size of items when the parent container expands.
+
+If one item has a `flex-grow` value of 1 and the other has a `flex-grow` value of 3, the one with the value of 3 will grow three times as much as the other.
