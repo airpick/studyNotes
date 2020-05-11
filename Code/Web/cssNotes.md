@@ -731,3 +731,12 @@ Wraps items from left-to-right if they are in a row, or top-to-bottom if they ar
 
 ##### 13.1.5.3 Wrap Reverse `wrap-reverse`
 Wraps items from right-to-left if they are in a row, or bottom-to-top if they are in a column.
+
+#### 13.1.6 Flex Shrink `flex-shrink`
+When used, it allows an item to shrink if the flex container is too small.
+Items shrink when the width of the parent container is smaller than the combined widths of all the flex items within it.
+
+The flex-shrink property takes numbers as values.
+The larger the number, the more it will shrink compared to the other items in the container.
+
+For example, if one item has a flex-shrink value of 1 and the other has a flex-shrink value of 3, the one with the value of 3 will shrink three times as much as the other.
