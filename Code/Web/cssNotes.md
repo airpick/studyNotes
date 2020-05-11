@@ -758,3 +758,9 @@ There is a shortcut available to set several flex properties at once. The flex-g
 ex: `flex: 1 0 10px;` This will set the item to `flex-grow: 1;`, `flex-shrink: 0;`, and `flex-basis: 10px;`.
 
 The default property settings are `flex: 0 1 auto;`.
+
+#### 13.1.10 Order `order`
+The `order` property is used to tell CSS the order of how flex items appear in the flex container.
+
+By default, items will appear in the same order they come in the source HTML.
+The property takes numbers as values, and negative numbers can be used.
