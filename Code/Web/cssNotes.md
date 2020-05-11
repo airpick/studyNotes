@@ -751,3 +751,10 @@ The `flex-basis` property specifies the initial size of the item before CSS make
 
 The units used by the `flex-basis` property are the same as other size properties (px, em, %, etc.).
 The value `auto` sizes items based on the content.
+
+#### 13.1.9 Flex `flex`
+There is a shortcut available to set several flex properties at once. The flex-grow, flex-shrink, and flex-basis properties can all be set together by using the flex property.
+
+ex: `flex: 1 0 10px;` This will set the item to `flex-grow: 1;`, `flex-shrink: 0;`, and `flex-basis: 10px;`.
+
+The default property settings are `flex: 0 1 auto;`.
