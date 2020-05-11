@@ -716,3 +716,18 @@ This is the default value if no `align-items` value is specified.
 ##### 13.1.4.5 Baseline `baseline`
 Align items to their baselines.
 Baseline is a text concept, think of it as the line that the letters sit on.
+
+#### 13.1.5 Flex Wrap `flex-wrap`
+Using the flex-wrap property tells CSS to wrap items.
+This means extra items move into a new row or column (think Wrap in Excel).
+
+The break point of where the wrapping happens depends on the size of the items and the size of the container.
+
+##### 13.1.5.1 No Wrap `nowrap`
+This is the default setting, and does not wrap items.
+
+##### 13.1.5.2 Wrap `wrap`
+Wraps items from left-to-right if they are in a row, or top-to-bottom if they are in a column.
+
+##### 13.1.5.3 Wrap Reverse `wrap-reverse`
+Wraps items from right-to-left if they are in a row, or bottom-to-top if they are in a column.
