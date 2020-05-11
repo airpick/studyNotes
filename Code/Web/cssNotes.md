@@ -748,3 +748,6 @@ If one item has a `flex-grow` value of 1 and the other has a `flex-grow` value o
 
 #### 13.1.8 Flex Basis `flex-basis`
 The `flex-basis` property specifies the initial size of the item before CSS makes adjustments with `flex-shrink` or `flex-grow`.
+
+The units used by the `flex-basis` property are the same as other size properties (px, em, %, etc.).
+The value `auto` sizes items based on the content.
