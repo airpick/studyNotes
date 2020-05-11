@@ -667,7 +667,9 @@ This is the default alignment if no justify-content is specified.
 
 ##### 13.1.3.2 Flex End `flex-end`
 Aligns items to the end of the flex container.
-For a row, this pushes the items to the right of the container. For a column, this pushes the items to the bottom of the container.
+
+For a row, this pushes the items to the right of the container.
+For a column, this pushes the items to the bottom of the container.
 
 ##### 13.1.3.3 Space Between `space-between`
 Aligns items to the center of the main axis, with extra space placed between the items.
@@ -680,3 +682,37 @@ Similar to space-between but the first and last items are not locked to the edge
 
 ##### 13.1.3.5 Space Evenly `space-evenly`
 Distributes space evenly between the flex items with a full space at either end of the flex container.
+
+#### 13.1.4 Align Items `align-items`
+CSS offers the align-items property to align flex items along the cross axis.
+
+For a row, it tells CSS how to push the items in the entire row up or down within the container.
+For a column, it tells CSS how to push all the items left or right within the container.
+
+##### 13.1.4.1 Flex Start `flex-start`
+Aligns items to the start of the flex container.
+
+For rows, this aligns items to the top of the container.
+For columns, this aligns items to the left of the container.
+
+##### 13.1.3.2 Flex End `flex-end`
+Aligns items to the end of the flex container.
+
+For a row, this pushes the items to the right of the container.
+For a column, this pushes the items to the bottom of the container.
+
+##### 13.1.4.3 Center `center`
+Align items to the center.
+
+For rows, this vertically aligns items (equal space above and below the items).
+For columns, this horizontally aligns them (equal space to the left and right of the items).
+
+##### 13.1.4.4 Stretch `stretch`
+Stretch the items to fill the flex container.
+For example, rows items are stretched to fill the flex container top-to-bottom.
+
+This is the default value if no `align-items` value is specified.
+
+##### 13.1.4.5 Baseline `baseline`
+Align items to their baselines.
+Baseline is a text concept, think of it as the line that the letters sit on.
