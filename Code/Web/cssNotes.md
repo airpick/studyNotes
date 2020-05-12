@@ -834,6 +834,13 @@ This CSS Grid property accepts other values as well:
 #### 14.1.8 Align Self `align-self`
 Same as `justify-self`, but applies **vertically**.
 
+#### 14.1.9 Justify Items `justify-items`
+The user can apply the changes of `justify-self` to all items on the grid more widesweepingly using the `justify-items` property.
+The same values are available for this property.
+
+#### 14.1.10 Align Items `align-items`
+Same as `justify-items`, but applies **vertical** changes instead of horizontal.
+
 ### 14.2 Units of Measurement
 The following units of measurement are accepted for defining a CSS Grid:
 
