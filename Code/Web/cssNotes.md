@@ -801,6 +801,12 @@ Defines the gap which will occur between each column.
 #### 14.1.3 Grid Row Gap `grid-row-gap`
 Defines the gap which will occur between each row.
 
+#### 14.1.4 Grid Gap `grid-gap`
+`grid-gap` is a shorthand property for `grid-row-gap` and `grid-column-gap` collectively.
+
+If `grid-gap` has one value, it will create a gap between all rows and columns.
+However, if there are two values, it will use the **first** one to set the gap between the **rows** and the **second** value for the **columns**.
+
 ### 14.2 Units of Measurement
 The following units of measurement are accepted for defining a CSS Grid:
 
