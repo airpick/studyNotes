@@ -807,6 +807,16 @@ Defines the gap which will occur between each row.
 If `grid-gap` has one value, it will create a gap between all rows and columns.
 However, if there are two values, it will use the **first** one to set the gap between the **rows** and the **second** value for the **columns**.
 
+#### 14.1.5 Grid Column `grid-column`
+To control the amount of columns an item will consume, you can use the `grid-column` property in conjunction with the line numbers you want the item to start and stop at.
+Line numbers are numbered according to the beginning of each column.
+
+| Here's | A | Sample |
+| ---- | ---- | ---- |
+| <- Line 1 & Line 2 -> | <- Line 2 & Line 3 -> | <- Line 3 & Line 4 -> |
+
+ex: `grid-column: 1 / 3` This will cause the element to occupy the space between column lines 1 and 3.
+
 ### 14.2 Units of Measurement
 The following units of measurement are accepted for defining a CSS Grid:
 
