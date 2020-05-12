@@ -817,6 +817,9 @@ Line numbers are numbered according to the beginning of each column.
 
 ex: `grid-column: 1 / 3` This will cause the element to occupy the space between column lines 1 and 3.
 
+#### 14.1.6 Grid Row `grid row`
+Same principle and formatting as `grid-column`.
+
 ### 14.2 Units of Measurement
 The following units of measurement are accepted for defining a CSS Grid:
 
