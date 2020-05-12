@@ -791,3 +791,6 @@ To add some columns to the grid, use the `grid-template-columns` property on a g
 
 This will give your grid two columns that are each 50px wide.
 The number of parameters given to the grid-template-columns property indicates the number of columns in the grid, and the value of each parameter indicates the width of each column.
+
+#### 14.1.2 Grid Template Rows `grid-template-rows`
+Same as `grid-template-columns`, but with rows duh.
