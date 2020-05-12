@@ -820,6 +820,17 @@ ex: `grid-column: 1 / 3` This will cause the element to occupy the space between
 #### 14.1.6 Grid Row `grid row`
 Same principle and formatting as `grid-column`.
 
+#### 14.1.7 Justify Self `justify-self`
+You can align the content's position within its cell horizontally using the `justify-self` property on a grid item.
+By default, this property has a value of `stretch`.
+
+This CSS Grid property accepts other values as well:
+
+* `stretch`: Default. Makes the content fill the whole width of the cell.
+* `start`: Aligns the content at the left of the cell.
+* `center`: Aligns the content in the center of the cell.
+* `end`: Aligns the content at the right of the cell.
+
 ### 14.2 Units of Measurement
 The following units of measurement are accepted for defining a CSS Grid:
 
