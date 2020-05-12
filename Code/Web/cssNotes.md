@@ -795,6 +795,12 @@ The number of parameters given to the grid-template-columns property indicates t
 #### 14.1.2 Grid Template Rows `grid-template-rows`
 Same as `grid-template-columns`, but with rows duh.
 
+#### 14.1.3 Grid Column Gap `grid-column-gap`
+Defines the gap which will occur between each column.
+
+#### 14.1.3 Grid Row Gap `grid-row-gap`
+Defines the gap which will occur between each row.
+
 ### 14.2 Units of Measurement
 The following units of measurement are accepted for defining a CSS Grid:
 
