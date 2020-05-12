@@ -794,3 +794,12 @@ The number of parameters given to the grid-template-columns property indicates t
 
 #### 14.1.2 Grid Template Rows `grid-template-rows`
 Same as `grid-template-columns`, but with rows duh.
+
+### 14.2 Units of Measurement
+The following units of measurement are accepted for defining a CSS Grid:
+
+* `px`: Size in pixels
+* `em`: A relative unit of measurement. The size of an EM or percent depends on its parent. If the text size of body is 16 pixels, then 150% or 1.5 EM will be 24 pixels (1.5 * 16).
+* `fr`: Sets the column or row to a fraction of the available space
+* `auto`: Sets the column or row to the width or height of its content automatically,
+* `%`: Adjusts the column or row to the percent width of its container.
