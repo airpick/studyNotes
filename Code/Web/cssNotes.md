@@ -864,6 +864,13 @@ To do this, you use the grid-area property on an item like this:
 
 The example provided above will cause the element with `class="sample-class"` to occupy all cells which are designated as `header` (see `grid-template-areas` example for cell assignment).
 
+##### 14.1.12.1 Grid Area With No Prior Cell Assignment
+If your grid doesn't have an areas template to reference, you can create an area on the fly for an item to be placed like this:
+`.item1 {grid-area: 1/1/2/4;}`
+
+The numbers in the example above represent these values:
+`grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;`
+
 ### 14.2 Units of Measurement
 The following units of measurement are accepted for defining a CSS Grid:
 
