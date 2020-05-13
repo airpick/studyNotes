@@ -801,8 +801,16 @@ The `repeat()` function can be used to specify the number of times you want your
 ex: `grid-template-columns: repeat(2, 1fr 50px) 20px;`
 The above example translates to `grid-template-columns: 1fr 50px 1fr 50px 20px;`.
 
+##### 14.1.1.2 MinMax Function `minmax()`
+This function is used to limit the size of items when the grid container changes size.
+
+To do this you need to specify the acceptable size range for your item.
+ex: `grid-template-columns: 100px minmax(50px, 200px);`
+
+In the code above, `grid-template-columns` is set to create two columns: the first is 100px wide, and the second has the minimum width of 50px and the maximum width of 200px.
+
 #### 14.1.2 Grid Template Rows `grid-template-rows`
-Same as `grid-template-columns`, but with rows duh.
+Same as `grid-template-columns`, but with rows.
 
 ##### 14.1.2.1 Repeat Function `repeat()`
 Let's say you want a grid with 100 rows of the same height.
@@ -812,6 +820,14 @@ The `repeat()` function can be used to specify the number of times you want your
 
 ex: `grid-template-rows: repeat(100, 50px);`
 The above example will output 100 rows, each with a `50px` height.
+
+##### 14.1.2.2 MinMax Function `minmax()`
+This function is used to limit the size of items when the grid container changes size.
+
+To do this you need to specify the acceptable size range for your item.
+ex: `grid-template-rows: 100px minmax(50px, 200px);`
+
+In the code above, `grid-template-rows` is set to create two rows: the first has 100px height, and the second has the minimum height of 50px and the maximum height of 200px.
 
 #### 14.1.3 Grid Column Gap `grid-column-gap`
 Defines the gap which will occur between each column.
