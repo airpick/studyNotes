@@ -854,7 +854,15 @@ grid-template-areas:
 
 The code above merges the top three cells together into an area named `header`, the bottom three cells into a `footer` area, and it makes two areas in the middle row; `advert` and `content`.
 
-**Note**: Every word in the code represents a cell and every pair of quotation marks represent a row. In addition to custom labels, you can use a period (.) to designate an empty cell in the grid.
+**Note**: Every word in the code represents a cell and every pair of quotation marks represent a row. In addition to custom labels, you can use a period (`.`) to designate an empty cell in the grid.
+
+#### 14.1.12 Grid Area `grid-area`
+After creating an area's template for your grid container, as shown in `grid-template-area`, you can place an item in your custom area by referencing the name you gave it.
+
+To do this, you use the grid-area property on an item like this:
+`.sample-class {grid-area: header;}`
+
+The example provided above will cause the element with `class="sample-class"` to occupy all cells which are designated as `header` (see `grid-template-areas` example for cell assignment).
 
 ### 14.2 Units of Measurement
 The following units of measurement are accepted for defining a CSS Grid:
