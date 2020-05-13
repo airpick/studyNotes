@@ -792,8 +792,26 @@ To add some columns to the grid, use the `grid-template-columns` property on a g
 This will give your grid two columns that are each 50px wide.
 The number of parameters given to the grid-template-columns property indicates the number of columns in the grid, and the value of each parameter indicates the width of each column.
 
+##### 14.1.1.1 Repeat Function `repeat()`
+Let's say you want a grid with 100 columns of the same width.
+It isn't very practical to insert 100 values individually.
+
+The `repeat()` function can be used to specify the number of times you want your column or row to be repeated, followed by a comma and the value you want to repeat.
+
+ex: `grid-template-columns: repeat(2, 1fr 50px) 20px;`
+The above example translates to `grid-template-columns: 1fr 50px 1fr 50px 20px;`.
+
 #### 14.1.2 Grid Template Rows `grid-template-rows`
 Same as `grid-template-columns`, but with rows duh.
+
+##### 14.1.2.1 Repeat Function `repeat()`
+Let's say you want a grid with 100 rows of the same height.
+It isn't very practical to insert 100 values individually.
+
+The `repeat()` function can be used to specify the number of times you want your column or row to be repeated, followed by a comma and the value you want to repeat.
+
+ex: `grid-template-rows: repeat(100, 50px);`
+The above example will output 100 rows, each with a `50px` height.
 
 #### 14.1.3 Grid Column Gap `grid-column-gap`
 Defines the gap which will occur between each column.
