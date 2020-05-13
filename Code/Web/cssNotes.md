@@ -841,6 +841,21 @@ The same values are available for this property.
 #### 14.1.10 Align Items `align-items`
 Same as `justify-items`, but applies **vertical** changes instead of horizontal.
 
+#### 14.1.11 Grid Template Areas `grid-template-areas`
+`grid-template-areas` can group cells of your grid together into an area and give the area a custom name.
+
+ex:
+```
+grid-template-areas:
+  "header header header"
+  "advert content content"
+  "footer footer footer";
+```
+
+The code above merges the top three cells together into an area named `header`, the bottom three cells into a `footer` area, and it makes two areas in the middle row; `advert` and `content`.
+
+**Note**: Every word in the code represents a cell and every pair of quotation marks represent a row. In addition to custom labels, you can use a period (.) to designate an empty cell in the grid.
+
 ### 14.2 Units of Measurement
 The following units of measurement are accepted for defining a CSS Grid:
 
