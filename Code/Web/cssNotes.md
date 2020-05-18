@@ -801,7 +801,17 @@ The `repeat()` function can be used to specify the number of times you want your
 ex: `grid-template-columns: repeat(2, 1fr 50px) 20px;`
 The above example translates to `grid-template-columns: 1fr 50px 1fr 50px 20px;`.
 
-##### 14.1.1.2 MinMax Function `minmax()`
+##### 14.1.1.2 Auto-Fill Option `auto-fill`
+Used with the `repeat()` function, this allows you to automatically insert as many rows or columns of your desired size as possible depending on the size of the container.
+
+You can create flexible layouts when combining auto-fill with minmax, like this:
+`repeat(auto-fill, minmax(60px, 1fr));`
+
+When the container changes size, this setup keeps inserting 60px columns and stretching them until it can insert another one.
+
+**Note**: If your container can't fit all your items on one row, it will move them down to a new one.
+
+##### 14.1.1.3 MinMax Function `minmax()`
 This function is used to limit the size of items when the grid container changes size.
 
 To do this you need to specify the acceptable size range for your item.
@@ -821,7 +831,17 @@ The `repeat()` function can be used to specify the number of times you want your
 ex: `grid-template-rows: repeat(100, 50px);`
 The above example will output 100 rows, each with a `50px` height.
 
-##### 14.1.2.2 MinMax Function `minmax()`
+##### 14.1.2.2 Auto-Fill Option `auto-fill`
+Used with the `repeat()` function, this allows you to automatically insert as many rows or columns of your desired size as possible depending on the size of the container.
+
+You can create flexible layouts when combining auto-fill with minmax, like this:
+`repeat(auto-fill, minmax(60px, 1fr));`
+
+When the container changes size, this setup keeps inserting 60px columns and stretching them until it can insert another one.
+
+**Note**: If your container can't fit all your items on one row, it will move them down to a new one.
+
+##### 14.1.2.3 MinMax Function `minmax()`
 This function is used to limit the size of items when the grid container changes size.
 
 To do this you need to specify the acceptable size range for your item.
