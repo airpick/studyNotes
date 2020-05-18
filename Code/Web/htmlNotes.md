@@ -1,32 +1,46 @@
 # HTML Notes
 ## Table of Contents
-1. [Overview](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#overview)
-2. [DOCTYPE Declaration](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#2-doctype-declaration-doctype-)
-3. [Elements](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3-elements)
-    * [3.1 Basic Elements](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#31-basic-elements)
-        * [3.1.1 Comment](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#311-comment------)
-        * [3.1.2 HTML](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#312-html-html-html)
-        * [3.1.3 Head](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#313-head-head-head)
-        * [3.1.4 Body](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#314-body-body-body)
-        * [3.1.5 Header](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#315-header-header-header)
-        * [3.1.6 Main](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#316-main-main-main)
-        * [3.1.7 Footer](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#317-footer-footer-footer)
-        * [3.1.8 Headers](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#318-headers-h-h)
-        * [3.1.9 Paragraph](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#319-paragraph-p-p)
-        * [3.1.10 Image](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3110-image-img)
-        * [3.1.11 Anchor](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3111-anchor-a-a)
-        * [3.1.12 Lists](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3112-lists)
-        * [3.1.13 Div](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#3113-div-div-div)
-    * [3.2 Forms and Interactive Elements](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#32-forms-and-interactive-elements)
-        * [3.2.1 Form](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#321-form-form-form)
-        * [3.2.2 Input](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#322-input-input)
-        * [3.2.3 Button](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#323-button-button-button)
-        * [3.2.4 Label](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#324-label-label-label)
-4. [Other Important Features](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#4-other-important-features)
-    * [4.1 Organizational Attributes](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#41-organizational-attributes)
-        * [4.1.1 Class](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#411-class-class)
-        * [4.1.2 ID](https://github.com/airpick/studyNotes/blob/master/Code/Web/htmlNotes.md#412-id-id)
-
+1. [Overview](#user-content-1-overview)
+2. [DOCTYPE Declaration](#user-content-2-doctype-declaration-doctype-)
+3. [Elements](#user-content-3-elements)
+    * [3.1 Basic Elements](#user-content-31-basic-elements)
+        * [3.1.1 Comment](#user-content-311-comment------)
+        * [3.1.2 HTML](#user-content-312-html-html-html)
+        * [3.1.3 Head](#user-content-313-head-head-head)
+        * [3.1.4 Body](#user-content-314-body-body-body)
+        * [3.1.5 Header](#user-content-315-header-header-header)
+        * [3.1.6 Main](#user-content-316-main-main-main)
+        * [3.1.7 Footer](#user-content-317-footer-footer-footer)
+        * [3.1.8 Headers](#user-content-318-headers-h-h)
+        * [3.1.9 Paragraph](#user-content-319-paragraph-p-p)
+        * [3.1.10 Image](#user-content-3110-image-img)
+        * [3.1.11 Anchor](#user-content-3111-anchor-a-a)
+        * [3.1.12 Lists](#user-content-3112-lists)
+        * [3.1.13 Div](#user-content-3113-div-div-div)
+        * [3.1.14 Strong](#user-content-3114-strong-strong-strong)
+        * [3.1.15 Underline](#user-content-3115-underline-u-u)
+        * [3.1.16 Emphasis](#user-content-3116-emphasis-em-em)
+        * [3.1.17 Strikethrough](#user-content-3117-strikethrough-s-s)
+        * [3.1.18 Horizontal Line](#user-content-3118-horizontal-line-hr)
+        * [3.1.19 Section](#user-content-3119-section-section-section)
+        * [3.1.20 Article](#user-content-3120-article-article-article)
+        * [3.1.21 Nav](#user-content-3121-nav-nav-nav)
+        * [3.1.22 Audio](#user-content-3122-audio-audio-audio)
+        * [3.1.23 Source](#user-content-3123-source-source)
+        * [3.1.24 Figure](#user-content-3124-figure-figure-figure)
+        * [3.1.25 Time](#user-content-3125-time-time-time)
+    * [3.2 Forms and Interactive Elements](#user-content-32-forms-and-interactive-elements)
+        * [3.2.1 Form](#user-content-321-form-form-form)
+        * [3.2.2 Input](#user-content-322-input-input)
+        * [3.2.3 Button](#user-content-323-button-button-button)
+        * [3.2.4 Label](#user-content-324-label-label-label)
+        * [3.2.5 FieldSet](#user-content-325-fieldset-fieldset-fieldset)
+        * [3.2.6 AccessKey](#user-content-326-accesskey-accesskey)
+        * [3.2.7 TabIndex](#user-content-327-tabindex-tabindex)
+4. [Other Important Features](#user-content-4-other-important-features)
+    * [4.1 Organizational Attributes](#user-content-41-organizational-attributes)
+        * [4.1.1 Class](#user-content-411-class-class)
+        * [4.1.2 ID](#user-content-412-id-id)
 
 ## 1 Overview
 A quick and dirty reference page for all things HTML5. 
@@ -68,6 +82,9 @@ By default, even if not declared all space within an HTML document not otherwise
 
 #### 3.1.5 Header `<header>` `</header>`
 Used as a container for introductory content or a set of navigation links.
+
+The `<header>` is meant for use in the `<body>` tag of your HTML document. 
+This is different than the `<head>` element, which contains the page's title, meta information, etc.
 
 #### 3.1.6 Main `<main>` `</main>`
 Used as a container for the main content of a webpage.
@@ -133,6 +150,94 @@ Displays the list with numbers.
 The `<div>` tag defines a division or a section in an HTML document.
 The `<div>` element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.
 `<div>` is most likely the most used element of all HTML.
+
+#### 3.1.14 Strong `<strong>` `</strong>`
+Makes the text within bold. 
+Technically speaking, the browser applies the CSS style `font-weight: bold` to the text.
+
+#### 3.1.15 Underline `<u>` `</u>`
+With the `<u>` element, the browser applies the CSS of `text-decoration: underline;` to the element.
+This causes the text to be underlined.
+
+#### 3.1.16 Emphasis `<em>` `</em>`
+This displays text as italicized, as the browser applies the CSS of `font-style: italic;` to the element.
+
+#### 3.1.17 Strikethrough `<s>` `</s>`
+With the `<s>` tag, the browser applies the CSS of `text-decoration: line-through;` to the element.
+
+#### 3.1.18 Horizontal Line `<hr>`
+Creates a horizontal line across the width of its containing element.
+
+#### 3.1.19 Section `<section>` `</section>`
+Used to group thematically related content. 
+Otherwise identical to a `<div>`, but the content within has some sort of relational value.
+
+#### 3.1.20 Article `<article>` `</article>`
+Groups independent, self-contained content.
+If the contents could appear simply in an RSS feed, then this is the correct element to use. 
+Otherwise, a `<section>`, `<div>`, or other dividing element would be more appropriate.
+
+#### 3.1.21 Nav `<nav>` `</nav>`
+The `<nav>` element has the embedded landmark feature for easy screen reader navigation.
+This tag is meant to wrap around the main navigation links in your page.
+
+If there are repeated site links at the bottom of the page, it isn't necessary to markup those with a nav tag as well.
+Using a `<footer>` is sufficient for these types of situations.
+
+#### 3.1.22 Audio `<audio>` `</audio>`
+The `<audio>` element gives semantic meaning when it wraps sound or audio stream content in your markup. 
+
+Audio content also needs a text alternative to be accessible to people who are deaf or hard of hearing. 
+This can be done with nearby text on the page or a link to a transcript.
+
+The `controls` attribute adds audio controls, like play, pause, and volume.
+The `<source>` element allows you to specify alternative audio files which the browser may choose from. 
+
+The browser will use the first recognized format.
+The text between the `<audio>` and `</audio>` tags will only be displayed in browsers that do not support the `<audio>` element.
+
+##### 3.1.22.1 Controls `controls`
+The `controls` attribute is a boolean attribute.
+When present, it specifies that audio controls should be displayed.
+
+Audio controls should include:
+
+* Play
+* Pause
+* Seeking
+* Volume
+
+#### 3.1.23 Source `<source>`
+The `<source>` tag is used to specify multiple media resources for media elements, such as `<video>`, `<audio>`, and `<picture>`.
+
+The `<source>` tag allows you to specify alternative video/audio/image files which the browser may choose from, based on its media type, codec support, or media query.
+
+#### 3.1.24 Figure `<figure>` `</figure>`
+The `<figure>` tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+
+While the content of the `<figure>` element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.
+
+##### 3.1.24.1 FigCaption `<figcaption>` `</figcaption>`
+The `<figcaption>` tag defines a caption for a `<figure>` element.
+The `<figcaption>` element can be placed as the first or last child of the `<figure>` element.
+
+```
+<figure>
+  <img src="roundhouseDestruction.jpeg" alt="Photo of Camper Cat executing a roundhouse kick">
+  <br>
+  <figcaption>
+    Master Camper Cat demonstrates proper form of a roundhouse kick.
+  </figcaption>
+</figure>
+```
+
+#### 3.1.25 Time `<time>` `</time>`
+The `<time>` tag defines a human-readable date/time.
+
+This element can also be used to encode dates and times in a machine-readable way so that user agents can offer to add birthday reminders or scheduled events to the user's calendar, and search engines can produce smarter search results.
+
+##### 3.1.25.1 DateTime `datetime="YYYY-MM-DDThh:mm:ssTZD"`
+The datetime attribute represent the machine-readable date/time of the `<time>` element.
 
 ### 3.2 Forms and Interactive Elements
 #### 3.2.1 Form `<form>` `</form>`
@@ -254,6 +359,42 @@ The `for` attribute of the `<label>` tag should be equal to the `id` attribute o
 | ---- | ---- | ---- |
 | for | element_id | Specifies which form element a label is bound to. |
 | form | form_id | Specifies which form the label belongs to. |
+
+#### 3.2.5 FieldSet `<fieldset>` `</fieldset>`
+The `<fieldset>` tag is used to group related elements in a form.
+It also draws a box around the related elements.
+
+##### 3.2.5.1 Legend `<legend>` `</legend>`
+The `<legend>` tag defines a caption for the `<fieldset>` element.
+
+ex: 
+```
+<form>
+  <fieldset>
+    <legend>Choose one of these three items:</legend>
+    <input id="one" type="radio" name="items" value="one">
+    <label for="one">Choice One</label><br>
+    <input id="two" type="radio" name="items" value="two">
+    <label for="two">Choice Two</label><br>
+    <input id="three" type="radio" name="items" value="three">
+    <label for="three">Choice Three</label>
+  </fieldset>
+</form>
+```
+
+#### 3.2.6 AccessKey `accesskey=""`
+HTML offers the `accesskey` attribute to specify a shortcut key to activate or bring focus to an element.
+This attribute can be used with any element (although its best application is with interactive elements) and can make navigation more efficient for keyboard-only users.
+
+#### 3.2.7 TabIndex `tabindex=""`
+The `tabindex` attribute specifies the tab order of an element (when the "tab" button is used for navigating).
+It can be used on any HTML element, or, more accurately, it will validate on any HTML element. However, it is not necessarily useful for some elements.
+
+* **-1 and under:** A negative tabindex value (typically -1) indicates that an element is focusable, but is not reachable by the keyboard. This method is generally used to bring focus to content programmatically (like when a div used for a pop-up window is activated).
+* **0:** For an element that normally is not accessible via tabbing, adding this attribute enters the element into the same order as existing elements in the HTML source markup. 
+* **1 and above:** Assigns a priority to the element (with 1 being highest). Tabbing will focus on these before all normal elements in the HTML source markup.
+
+Side Note: Using `tabindex` also enables the CSS pseudo-class `:focus` to work on the element it is applied to.
 
 ## 4 Other Important Features
 ### 4.1 Organizational Attributes
