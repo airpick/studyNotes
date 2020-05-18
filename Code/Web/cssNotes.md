@@ -811,7 +811,14 @@ When the container changes size, this setup keeps inserting 60px columns and str
 
 **Note**: If your container can't fit all your items on one row, it will move them down to a new one.
 
-##### 14.1.1.3 MinMax Function `minmax()`
+##### 14.1.1.3 Auto-Fit Option `auto-fit`
+`auto-fit` works almost identically to `auto-fill`. 
+
+The only difference is that when the container's size exceeds the size of all the items combined, `auto-fill` keeps inserting empty rows or columns and pushes your items to the side, while `auto-fit` collapses those empty rows or columns and stretches your items to fit the size of the container.
+
+**Note**: If your container can't fit all your items on one row, it will move them down to a new one.
+
+##### 14.1.1.4 MinMax Function `minmax()`
 This function is used to limit the size of items when the grid container changes size.
 
 To do this you need to specify the acceptable size range for your item.
@@ -841,7 +848,14 @@ When the container changes size, this setup keeps inserting 60px columns and str
 
 **Note**: If your container can't fit all your items on one row, it will move them down to a new one.
 
-##### 14.1.2.3 MinMax Function `minmax()`
+##### 14.1.2.3 Auto-Fit Option `auto-fit`
+`auto-fit` works almost identically to `auto-fill`. 
+
+The only difference is that when the container's size exceeds the size of all the items combined, `auto-fill` keeps inserting empty rows or columns and pushes your items to the side, while `auto-fit` collapses those empty rows or columns and stretches your items to fit the size of the container.
+
+**Note**: If your container can't fit all your items on one row, it will move them down to a new one.
+
+##### 14.1.2.4 MinMax Function `minmax()`
 This function is used to limit the size of items when the grid container changes size.
 
 To do this you need to specify the acceptable size range for your item.
