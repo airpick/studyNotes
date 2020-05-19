@@ -1,2 +1,6 @@
 # ignoring all .swp files
 *.swp
+
+# ignoring all images
+*.png
+*.jpg
