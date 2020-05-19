@@ -1,0 +1,23 @@
+footer, body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: grey;
+}
+
+h1, h2, p, figcaption, ul {
+    align-items: center;
+    text-align: center;
+}
+
+div {
+    align-items: center;
+}
+
+#image, #img-caption {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
