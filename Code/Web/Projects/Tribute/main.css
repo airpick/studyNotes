@@ -1,7 +1,55 @@
-head, body, footer, div, table, th, td {
-  border: 1px solid black;
+head, body, main {
+    background-image: url(Backgrounds/planar-chart.png);
+    background-position: center;
+    background-size: cover;
 }
 
-td {
+h1, h2, h3, h4, #sub-title, figcaption, td, footer {
     text-align: center;
+}
+
+h2, h3 {
+    padding-top: 20px;
+}
+
+#head-div, #img-div, #class-features-div, #progression-chart-div, #class-masteries-div, footer {
+    border-color: saddlebrown;
+    border-width: 5px;
+    border-style: groove;
+    background-image: url(Backgrounds/generic.png);
+    background-size: cover;
+}
+
+figcaption, table, footer {
+    padding: 30px 40px 30px 40px;
+    margin: 20px;
+}
+
+p {
+    padding: 0px 40px;
+}
+
+ol {
+    padding: 0px 100px;
+}
+
+#image, #img-caption {
+    display: block;
+    margin: auto;
+    width: 60%;
+    padding: 40px 0px;
+}
+
+#img-caption {
+    padding: 0px 0px 10px 0px;
+}
+
+#progression-chart-div {
+    display: grid;
+    align-items: center;
+    overflow: auto;
+}
+
+th, td {
+    border: 1px solid black;
 }
