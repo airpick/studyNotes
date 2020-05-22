@@ -1,5 +1,5 @@
 head, body, main {
-    background-image: url(Backgrounds/planar-chart.png);
+    background-image: url(https://i.imgur.com/72CxE0b.png);
     background-position: center;
     background-size: cover;
 }
@@ -16,7 +16,7 @@ h2, h3 {
     border-color: saddlebrown;
     border-width: 5px;
     border-style: groove;
-    background-image: url(Backgrounds/generic.png);
+    background-image: url(https://i.imgur.com/DqdWPzU.png);
     background-size: cover;
 }
 
